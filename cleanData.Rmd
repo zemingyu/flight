@@ -1,0 +1,141 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+
+getwd()
+
+# install.packages(c("plotly", "summarytools"))
+# install.packages("chron")
+# install.packages("caret", dependencies = c("Depends", "Suggests")) 
+# install.packages("quantreg")
+library(h2o)
+library(dplyr)
+library(ggplot2)
+library(summarytools)
+library(stringr)#regular expression
+library(chron)#times
+library(gbm)
+library(caret)
+library(plotly)
+
+# ### sparklyr
+# # install.packages("curl")
+# # devtools::install_github("rstudio/sparklyr")
+# # install.packages("readr")
+# # install.packages("digest")
+# library(readr)
+# library(digest)
+# library(sparklyr)
+# 
+# # spark_install(version = "2.0.0")
+# sc <- spark_connect(master="yarn",
+#          config = list(
+#            default = list(
+#              spark.submit.deployMode= "client",
+#              spark.executor.instances= 20, 
+#              spark.executor.memory= "2G",
+#              spark.executor.cores= 2,
+#              spark.driver.memory= "4G")))
+
+
+```
+
+Load data
+
+```{r}
+# install.packages("dbConnect")
+# install.packages("RPostgreSQL")
+
+library(dbConnect)
+library(RPostgreSQL)
+
+# Full version of connection seetting
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, user='wangj', password='flightpass', 
+        dbname='expedia', host='flight-db.c6vuzqnavuqr.ap-southeast-2.rds.amazonaws.com',port=5432) 
+
+dbGetInfo(drv)
+summary(con)
+
+flight <- dbReadTable(con, c("flight"))
+airline <- dbReadTable(con, c("airline"))
+flightPrice <- dbReadTable(con, c("flight_price"))
+cabinclass <- dbReadTable(con, c("cabinclass"))
+city <- dbReadTable(con, c("city"))
+airlineCompany <- dbReadTable(con, c("airline_company"))
+trip <- dbReadTable(con, c("trip"))
+flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
+
+saveRDS(flight, "flight.rds")
+saveRDS(airline, "airline.rds")
+saveRDS(flightPrice, "flightPrice.rds")
+saveRDS(cabinclass, "cabinclass.rds")
+saveRDS(city, "city.rds")
+saveRDS(airlineCompany, "airlineCompany.rds")
+saveRDS(trip, "trip.rds")
+saveRDS(flightPriceQueryTask, "flightPriceQueryTask.rds")
+
+saveRDS(flight, "flight.rds")
+
+
+# At the end of you script, do not forget to close the connection:
+# Close PostgreSQL connection 
+dbDisconnect(con)
+
+
+table(flightPrice$search_date)
+head(airline)
+
+# install.packages("sqldf")
+library(sqldf)
+detach("package:RPostgreSQL", unload=TRUE)
+detach("package:RMySQL", unload=TRUE)
+
+testAirline <- 
+    sqldf('SELECT
+          id,
+          get_city_name(from_city) as from_city,
+          get_city_name(to_city) as to_city
+      FROM airline')
+
+
+ 
+
+```
+
+```{r}
+
+
+
+flight <- read.csv(file="D:/Data Science/Flight v2/flight_sydney_shanghai.csv", header=TRUE, sep=",")
+
+
+#convert price
+flight<-mutate(flight, price=as.numeric(gsub('[$,Â,£]','',as.character(flight$price))))
+
+summary(flight)
+
+#drop class (all economy), adults (1), stay_days (0) 
+# flight<-select(flight, -c(class, adults, stay_days))
+#conver search_date to date
+flight<-mutate(flight, start_date=as.POSIXct(flight$start_date), 
+               search_date=as.POSIXct(flight$search_date))
+
+#generate route
+flight<-mutate(flight, route=paste(flight$from, flight$to, sep="-"))
+
+#drop dodgy record
+flight<-filter(flight, stop!="AU$698 .86")
+
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
