@@ -47,14 +47,13 @@ library(plotly)
 
 ```
 
-Load data
-
+### Pull data
 ```{r}
 # install.packages("dbConnect")
 # install.packages("RPostgreSQL")
 
-library(dbConnect)
-library(RPostgreSQL)
+# library(dbConnect)
+# library(RPostgreSQL)
 # 
 # # Full version of connection seetting
 # drv <- dbDriver("PostgreSQL")
@@ -73,40 +72,52 @@ library(RPostgreSQL)
 # trip <- dbReadTable(con, c("trip"))
 # flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
 
-saveRDS(flight, "flight.rds")
-saveRDS(airline, "airline.rds")
-saveRDS(flightPrice, "flightPrice.rds")
-saveRDS(cabinclass, "cabinclass.rds")
-saveRDS(city, "city.rds")
-saveRDS(airlineCompany, "airlineCompany.rds")
-saveRDS(trip, "trip.rds")
-saveRDS(flightPriceQueryTask, "flightPriceQueryTask.rds")
-
-saveRDS(flight, "flight.rds")
-
-
 # At the end of you script, do not forget to close the connection:
 # Close PostgreSQL connection 
-dbDisconnect(con)
+# dbDisconnect(con)
+
+
+# saveRDS(flight, "flight.rds")
+# saveRDS(airline, "airline.rds")
+# saveRDS(flightPrice, "flightPrice.rds")
+# saveRDS(cabinclass, "cabinclass.rds")
+# saveRDS(city, "city.rds")
+# saveRDS(airlineCompany, "airlineCompany.rds")
+# saveRDS(trip, "trip.rds")
+# saveRDS(flightPriceQueryTask, "flightPriceQueryTask.rds")
+```
+
+
+### Manipulate data
+```{r}
+flight <- readRDS("flight.rds")
+airline <- readRDS("airline.rds")
+flightPrice <- readRDS("flightPrice.rds")
+cabinclass <- readRDS("cabinclass.rds")
+city <- readRDS("city.rds")
+airlineCompany <- readRDS("airlineCompany.rds")
+trip <- readRDS("trip.rds")
+
+str(flight)
+table(flight$stay_days)
+min(flightPrice$departure_time)
+max(flightPrice$departure_time)
 
 
 table(flightPrice$search_date)
 head(airline)
 
-# install.packages("sqldf")
-library(sqldf)
-detach("package:RPostgreSQL", unload=TRUE)
-detach("package:RMySQL", unload=TRUE)
-
-testAirline <- 
-    sqldf('SELECT
-          id,
-          get_city_name(from_city) as from_city,
-          get_city_name(to_city) as to_city
-      FROM airline')
-
-
- 
+# # install.packages("sqldf")
+# library(sqldf)
+# detach("package:RPostgreSQL", unload=TRUE)
+# detach("package:RMySQL", unload=TRUE)
+# 
+# testAirline <- 
+#     sqldf('SELECT
+#           id,
+#           get_city_name(from_city) as from_city,
+#           get_city_name(to_city) as to_city
+#       FROM airline')
 
 ```
 
