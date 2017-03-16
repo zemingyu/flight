@@ -89,6 +89,10 @@ library(plotly)
 
 
 ### Manipulate data
+
+asdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasd
+
+
 ```{r}
 flight <- readRDS("flight.rds")
 airline <- readRDS("airline.rds")
@@ -102,6 +106,7 @@ str(flight)
 table(flight$stay_days)
 min(flightPrice$departure_time)
 max(flightPrice$departure_time)
+
 
 
 table(flightPrice$search_date)
