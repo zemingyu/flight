@@ -52,8 +52,13 @@ library(plotly)
 # install.packages("dbConnect")
 # install.packages("RPostgreSQL")
 
+<<<<<<< HEAD
 # library(dbConnect)
 # library(RPostgreSQL)
+=======
+library(dbConnect)
+library(RPostgreSQL)
+>>>>>>> 47f2a1a3b896eb34647f0019ddfc1f6b867ecebc
 # 
 # # Full version of connection seetting
 # drv <- dbDriver("PostgreSQL")
@@ -71,6 +76,7 @@ library(plotly)
 # airlineCompany <- dbReadTable(con, c("airline_company"))
 # trip <- dbReadTable(con, c("trip"))
 # flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
+<<<<<<< HEAD
 
 # At the end of you script, do not forget to close the connection:
 # Close PostgreSQL connection 
@@ -86,6 +92,8 @@ library(plotly)
 # saveRDS(trip, "trip.rds")
 # saveRDS(flightPriceQueryTask, "flightPriceQueryTask.rds")
 ```
+=======
+>>>>>>> 47f2a1a3b896eb34647f0019ddfc1f6b867ecebc
 
 
 ### Manipulate data
