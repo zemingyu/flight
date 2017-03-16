@@ -55,23 +55,23 @@ Load data
 
 library(dbConnect)
 library(RPostgreSQL)
-
-# Full version of connection seetting
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, user='wangj', password='flightpass', 
-        dbname='expedia', host='flight-db.c6vuzqnavuqr.ap-southeast-2.rds.amazonaws.com',port=5432) 
-
-dbGetInfo(drv)
-summary(con)
-
-flight <- dbReadTable(con, c("flight"))
-airline <- dbReadTable(con, c("airline"))
-flightPrice <- dbReadTable(con, c("flight_price"))
-cabinclass <- dbReadTable(con, c("cabinclass"))
-city <- dbReadTable(con, c("city"))
-airlineCompany <- dbReadTable(con, c("airline_company"))
-trip <- dbReadTable(con, c("trip"))
-flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
+# 
+# # Full version of connection seetting
+# drv <- dbDriver("PostgreSQL")
+# con <- dbConnect(drv, user='wangj', password='flightpass', 
+#         dbname='expedia', host='flight-db.c6vuzqnavuqr.ap-southeast-2.rds.amazonaws.com',port=5432) 
+# 
+# dbGetInfo(drv)
+# summary(con)
+# 
+# flight <- dbReadTable(con, c("flight"))
+# airline <- dbReadTable(con, c("airline"))
+# flightPrice <- dbReadTable(con, c("flight_price"))
+# cabinclass <- dbReadTable(con, c("cabinclass"))
+# city <- dbReadTable(con, c("city"))
+# airlineCompany <- dbReadTable(con, c("airline_company"))
+# trip <- dbReadTable(con, c("trip"))
+# flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
 
 saveRDS(flight, "flight.rds")
 saveRDS(airline, "airline.rds")
