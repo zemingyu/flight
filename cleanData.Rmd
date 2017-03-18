@@ -10,7 +10,6 @@ Try executing this chunk by clicking the *Run* button within the chunk or by pla
 ```{r}
 
 getwd()
-
 # install.packages(c("plotly", "summarytools"))
 # install.packages("chron")
 # install.packages("caret", dependencies = c("Depends", "Suggests")) 
@@ -24,6 +23,7 @@ library(chron)#times
 library(gbm)
 library(caret)
 library(plotly)
+library(data.table)
 
 # ### sparklyr
 # # install.packages("curl")
@@ -47,18 +47,14 @@ library(plotly)
 
 ```
 
-### Pull data
+## Pull data
 ```{r}
 # install.packages("dbConnect")
 # install.packages("RPostgreSQL")
 
-<<<<<<< HEAD
-# library(dbConnect)
-# library(RPostgreSQL)
-=======
 library(dbConnect)
 library(RPostgreSQL)
->>>>>>> 47f2a1a3b896eb34647f0019ddfc1f6b867ecebc
+
 # 
 # # Full version of connection seetting
 # drv <- dbDriver("PostgreSQL")
@@ -76,7 +72,7 @@ library(RPostgreSQL)
 # airlineCompany <- dbReadTable(con, c("airline_company"))
 # trip <- dbReadTable(con, c("trip"))
 # flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
-<<<<<<< HEAD
+
 
 # At the end of you script, do not forget to close the connection:
 # Close PostgreSQL connection 
@@ -92,14 +88,11 @@ library(RPostgreSQL)
 # saveRDS(trip, "trip.rds")
 # saveRDS(flightPriceQueryTask, "flightPriceQueryTask.rds")
 ```
-=======
->>>>>>> 47f2a1a3b896eb34647f0019ddfc1f6b867ecebc
 
 
-### Manipulate data
+## Manipulate data
 
-asdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasdasdfasdfasasfasd
-
+### Merge tables together
 
 ```{r}
 flight <- readRDS("flight.rds")
@@ -116,23 +109,197 @@ min(flightPrice$departure_time)
 max(flightPrice$departure_time)
 
 
+flightPrice <- data.table(flightPrice)
+head(flightPrice)
 
-table(flightPrice$search_date)
-head(airline)
+flightPrice1 <- merge(flightPrice, flight, by.x="flight_id", by.y="id", all.x=TRUE)
 
-# # install.packages("sqldf")
-# library(sqldf)
-# detach("package:RPostgreSQL", unload=TRUE)
-# detach("package:RMySQL", unload=TRUE)
-# 
-# testAirline <- 
-#     sqldf('SELECT
-#           id,
-#           get_city_name(from_city) as from_city,
-#           get_city_name(to_city) as to_city
-#       FROM airline')
+colnames(airlineCompany) <- c("id", "company")
+
+flightPrice2 <- merge(flightPrice1, airlineCompany, by.x="company_id", by.y="id", all.x=TRUE)
+flightPrice3 <- merge(flightPrice2, airline, by.x="airline_id", by.y="id", all.x=TRUE)
+
+fromCity <- city
+colnames(fromCity) <- c("id", "from_city_name", "from_city_short_name", "from_city_url_name")
+
+toCity <- city
+colnames(toCity) <- c("id", "to_city_name", "to_city_short_name", "to_city_url_name")
+
+flightPrice4 <- merge(flightPrice3, fromCity, by.x="from_city", by.y="id", all.x=TRUE)
+flightPrice5 <- merge(flightPrice4, toCity, by.x="to_city", by.y="id", all.x=TRUE)
+
+colnames(cabinclass) <- c("id", "cabin_class")
+
+flightPrice6 <- merge(flightPrice5, cabinclass, by.x="cabinclass", by.y="id", all.x=TRUE)
+
+colnames(trip) <- c("id", "tripType")
+
+flightPrice7 <- merge(flightPrice6, trip, by.x="trip", by.y="id", all.x=TRUE)
+
+flightPrice7 <- data.frame(flightPrice7)
+
+flightPriceToCheck <- flightPrice7[is.na(flightPrice7$from_city), ]
+flights <- flightPrice7[!is.na(flightPrice7$from_city), ]
+
+rm(flightPrice1, flightPrice2, flightPrice3, flightPrice4, flightPrice5, flightPrice6)
+
+gc()
+
+
 
 ```
+
+
+###Check data 
+
+Drop unnecessary columns
+```{r}
+str(flights)
+flights <- data.frame(flights)
+subset(flights, select=c(trip))
+
+
+flights <- subset(flights, select= - c(trip, cabinclass, to_city, from_city, airline_id, company_id,flight_id)) 
+
+flights <- data.frame(flights)
+flights <- data.table(flights)
+summarise(flights)
+
+table(subset(flights, select = c(span_days, stop, stay_days, adults, children, children_age, cabin_class, tripType)))
+
+flights <- subset(flights, select = -c(rate, span_days, stay_days, adults, children, children_age, cabin_class, tripType))
+# flights$rate <- NULL
+str(flights)
+```
+
+
+Convert data
+```{r}
+str(flights)
+flights <- mutate(flights, price=as.numeric(gsub('[$,Â,£]','',as.character(flights$price))))
+
+flights <- data.table(flights)
+
+table(flights$company)
+
+
+
+check <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
+                  # company %in% c("China Southern Airlines", "China Eastern Airlines",
+                  #                "China Airlines") &
+                  search_date == as.Date("2017-03-14"),
+        .(Avg_Price = mean(price)), by=list(company, start_date)]
+check$wday <- as.POSIXlt(check$start_date)$wday
+check$year <- as.POSIXlt(check$start_date)$year + 1900
+check$week <- as.POSIXlt(check$start_date)$yday  %/% 7 + 1
+check$month <- as.POSIXlt(check$start_date)$mon + 1
+
+check$monthf<-factor(check$month,levels=as.character(1:12),labels=c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"),ordered=TRUE)
+
+check$weekdayf<-factor(check$wday,levels=rev(0:6),labels=rev(c("Mon","Tue","Wed","Thu","Fri","Sat","Sun")),ordered=TRUE)
+
+
+require("zoo")
+library("plyr")
+require(scales)
+require(RColorBrewer)
+
+# the monthweek part is a bit trickier 
+# first a factor which cuts the data into month chunks
+check$yearmonth<-as.yearmon(check$start_date)
+check$yearmonthf<-factor(check$yearmonth)
+# then find the "week of year" for each day
+check$week <- as.numeric(format(check$start_date,"%W"))
+# and now for each monthblock we normalize the week to start at 1 
+
+check<-ddply(check,.(yearmonthf),transform,monthweek=1+week-min(week))
+
+
+brewer.pal(8, "Purples")
+
+P<- ggplot(check, aes(monthweek, weekdayf, fill = Avg_Price)) + 
+  geom_tile(colour = "white") + facet_grid(company~monthf) + 
+  scale_fill_gradient(low="#EFEDF5", high="#4A1486") +
+  # scale_colour_gradientn(colours = rainbow(10)) + 
+   # scale_colour_gradientn(colours = c("red","yellow","green","lightblue","darkblue"),
+   #                       values=c(1400,1200, 1000,800,600,400)) + 
+  #sc +
+  ggtitle("Shanghai to Sydney Flight Price") +  xlab("\n\nWeek of Month") + ylab("")
+P 
+
+
+```
+
+
+
+```{r}
+
+unique(check$company)
+
+check$Avg_Price <- round(check$Avg_Price, 0)
+check$company_group <- ifelse(check$company %in% c("China Airlines",
+    "Air China", "China Easter Airlines", "China Southern Airlines", "Hainan Airlines", "Sichuan Airlines", "Xiamen Airlines"), 
+    "China", "Others")
+
+check2 <- filter(check, company%in% c("China Airlines", "Air China", "China Southern Airlines",
+                                      "Qantas Airways"))
+
+
+?dcast
+check3 <- dcast(check2,  start_date ~ company, value.var="Avg_Price")
+
+colnames(check3) <- c("start_date", "Air_China", "China_Airlines", "China_Southern_Airlines", "Qantas_Airways")
+
+library(plotly)
+
+Sys.setenv("plotly_username"="zeming")
+Sys.setenv("plotly_api_key"="btidUed24ghzXKpgNTgR")
+
+x <- c(1:15)
+y <- c(10, 20, NA, 15, 10, 5, 15, NA, 20, 10, 10, 15, 25, 20, 10)
+
+str(check3)
+data <- data.frame(x, y)
+
+p <- plot_ly(check3, x = ~start_date, y = ~Air_China, name = "Air China", type = 'scatter', mode = 'lines') %>%
+  add_trace(y = ~China_Airlines, name = "China Airlines", connectgaps = TRUE)%>%
+  add_trace(y = ~China_Southern_Airlines, name = "China Southern Airlines", connectgaps = TRUE)%>%
+  add_trace(y = ~Qantas_Airways, name = "Qantas Airways", connectgaps = TRUE)
+
+
+p
+# Create a shareable link to your chart
+# Set up API credentials: https://plot.ly/r/getting-started
+chart_link = plotly_POST(p, filename="flightDataCheck")
+chart_link
+
+
+
+```
+
+
+```{r}
+# A line graph
+ggplot(data=check, aes(x=start_date, y=Avg_Price, group=company, colour=company)) + # , 
+    facet_grid(company_group ~ .) + 
+    geom_line(aes(linetype=company), size=1) +     # Set linetype by sex
+    geom_point(size=3, fill="white") +         # Use larger points, fill with white
+    expand_limits(y=0) +                       # Set y range to include 0
+    # scale_colour_hue(name="Company",      # Set legend title
+    #                  l=30)  +                  # Use darker colors (lightness=30)
+    # scale_shape_manual(name="Company",
+    #                    values=c(22,21,22)) +      # Use points with a fill color
+    #scale_linetype_discrete(name="Company") +
+    xlab("Departure Date") + ylab("Price") + # Set axis labels
+    ggtitle("Price by Departure Date") +     # Set title
+    theme_bw() +
+    theme(legend.position=c(.7, .75))           # Position legend inside
+                                               # This must go after theme_bw
+
+
+
+```
+
 
 ```{r}
 
@@ -141,8 +308,6 @@ head(airline)
 flight <- read.csv(file="D:/Data Science/Flight v2/flight_sydney_shanghai.csv", header=TRUE, sep=",")
 
 
-#convert price
-flight<-mutate(flight, price=as.numeric(gsub('[$,Â,£]','',as.character(flight$price))))
 
 summary(flight)
 
