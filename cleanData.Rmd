@@ -185,8 +185,8 @@ table(flights$company)
 
 
 check <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
-                  # company %in% c("China Southern Airlines", "China Eastern Airlines",
-                  #                "China Airlines") &
+                   # company %in% c("China Southern Airlines", "China Eastern Airlines",
+                   #                "China Airlines") &
                   search_date == as.Date("2017-03-14"),
         .(Avg_Price = mean(price)), by=list(company, start_date)]
 check$wday <- as.POSIXlt(check$start_date)$wday
@@ -237,45 +237,83 @@ P
 unique(check$company)
 
 check$Avg_Price <- round(check$Avg_Price, 0)
-check$company_group <- ifelse(check$company %in% c("China Airlines",
-    "Air China", "China Easter Airlines", "China Southern Airlines", "Hainan Airlines", "Sichuan Airlines", "Xiamen Airlines"), 
-    "China", "Others")
+# check$company_group <- ifelse(check$company %in% c("China Airlines",
+#     "Air China", "China Easter Airlines", "China Southern Airlines", "Hainan Airlines", "Sichuan Airlines", "Xiamen Airlines"), 
+#     "China", "Others")
 
-check2 <- filter(check, company%in% c("China Airlines", "Air China", "China Southern Airlines",
-                                      "Qantas Airways"))
+# check2 <- filter(check, company%in% c("China Airlines", "Air China", "China Southern Airlines",
+#                                       "Qantas Airways"))
 
 
-?dcast
-check3 <- dcast(check2,  start_date ~ company, value.var="Avg_Price")
-
-colnames(check3) <- c("start_date", "Air_China", "China_Airlines", "China_Southern_Airlines", "Qantas_Airways")
+# ?dcast
+# check3 <- dcast(check2,  start_date ~ company, value.var="Avg_Price")
+# 
+# colnames(check3) <- c("start_date", "Air_China", "China_Airlines", "China_Southern_Airlines", "Qantas_Airways")
 
 library(plotly)
 
 Sys.setenv("plotly_username"="zeming")
 Sys.setenv("plotly_api_key"="btidUed24ghzXKpgNTgR")
 
-x <- c(1:15)
-y <- c(10, 20, NA, 15, 10, 5, 15, NA, 20, 10, 10, 15, 25, 20, 10)
+str(check)
 
-str(check3)
-data <- data.frame(x, y)
 
-p <- plot_ly(check3, x = ~start_date, y = ~Air_China, name = "Air China", type = 'scatter', mode = 'lines') %>%
-  add_trace(y = ~China_Airlines, name = "China Airlines", connectgaps = TRUE)%>%
-  add_trace(y = ~China_Southern_Airlines, name = "China Southern Airlines", connectgaps = TRUE)%>%
-  add_trace(y = ~Qantas_Airways, name = "Qantas Airways", connectgaps = TRUE)
+# p <- plot_ly(check3, x = ~start_date, y = ~Air_China, name = "Air China", type = 'scatter', mode = 'lines') %>%
+#   add_trace(y = ~China_Airlines, name = "China Airlines", connectgaps = TRUE)%>%
+#   add_trace(y = ~China_Southern_Airlines, name = "China Southern Airlines", connectgaps = TRUE)%>%
+#   add_trace(y = ~Qantas_Airways, name = "Qantas Airways", connectgaps = TRUE)
 
+p <- plot_ly(check, x = ~start_date, y = ~Avg_Price, color = ~company, type = 'scatter', mode = 'markers') 
 
 p
 # Create a shareable link to your chart
 # Set up API credentials: https://plot.ly/r/getting-started
-chart_link = plotly_POST(p, filename="flightDataCheck")
-chart_link
+# chart_link = plotly_POST(p, filename="flightDataCheck")
+# chart_link
 
 
 
 ```
+
+Try 3d plot
+```{r}
+
+flights$departureTime <- strftime(flights$departure_time, format="%H:%M")
+flights$departureHour <- strftime(flights$departure_time, format="%H")
+
+flights <- data.table(flights)
+flights$wday <- as.POSIXlt(flights$start_date)$wday + 1
+flights$weekdayf<-factor(flights$wday,levels=rev(1:7),labels=rev(c("Mon","Tue","Wed","Thu","Fri","Sat","Sun")),ordered=TRUE)
+flights$hour
+
+table(flights$company)
+
+check4 <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
+                   # company %in% c("China Southern Airlines", "AirAsia") &
+                  search_date == as.Date("2017-03-14"),
+        .(price = round(mean(price), 0)), by=list(company, wday, departureHour)]
+
+# check4 <- list(departure_date = check4$start_date, departure_time = check4$departureTime,
+#                price = check4$price)
+head(check4)
+check4 <- filter(check4, company %in% c("Qantas Airways", "AirAsiaX", "China Southern Airlines", "Air China"))
+
+p2 <- plot_ly(data = check4, x = ~wday , y = ~departureHour, z = ~price, color = ~company,  type = "scatter3d", mode = "markers", marker=list(size= 5)) %>% layout(title = "Price by weekday and hour of the day - Shanghai to Sydney")
+
+# Create a shareable link to your chart
+# Set up API credentials: https://plot.ly/r/getting-started
+chart_link = plotly_POST(p2, filename="flightPrice3d")
+chart_link
+
+
+
+
+
+
+
+
+```
+
 
 
 ```{r}
