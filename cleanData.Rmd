@@ -1,19 +1,24 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document: default
+  html_notebook: default
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
 
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
-```{r}
+```{r, include=FALSE}
 
 getwd()
 # install.packages(c("plotly", "summarytools"))
 # install.packages("chron")
 # install.packages("caret", dependencies = c("Depends", "Suggests")) 
 # install.packages("quantreg")
+# install.packages("dbConnect")
+# install.packages("RPostgreSQL")
+
 library(h2o)
 library(dplyr)
 library(ggplot2)
@@ -24,6 +29,9 @@ library(gbm)
 library(caret)
 library(plotly)
 library(data.table)
+
+library(dbConnect)
+library(RPostgreSQL)
 
 # ### sparklyr
 # # install.packages("curl")
@@ -49,17 +57,12 @@ library(data.table)
 
 ## Pull data
 ```{r}
-# install.packages("dbConnect")
-# install.packages("RPostgreSQL")
-
-library(dbConnect)
-library(RPostgreSQL)
 
 # 
 # # Full version of connection seetting
 # drv <- dbDriver("PostgreSQL")
-# con <- dbConnect(drv, user='wangj', password='flightpass', 
-#         dbname='expedia', host='flight-db.c6vuzqnavuqr.ap-southeast-2.rds.amazonaws.com',port=5432) 
+# con <- dbConnect(drv, user='wangj', password='flightpass',
+#         dbname='expedia', host='flight-db.c6vuzqnavuqr.ap-southeast-2.rds.amazonaws.com',port=5432)
 # 
 # dbGetInfo(drv)
 # summary(con)
@@ -72,8 +75,8 @@ library(RPostgreSQL)
 # airlineCompany <- dbReadTable(con, c("airline_company"))
 # trip <- dbReadTable(con, c("trip"))
 # flightPriceQueryTask <- dbReadTable(con, c("flight_price_query_task"))
-
-
+# 
+# 
 # At the end of you script, do not forget to close the connection:
 # Close PostgreSQL connection 
 # dbDisconnect(con)
@@ -149,7 +152,7 @@ library(RPostgreSQL)
 # 
 
 # saveRDS(flights, "flights.rds")
-flights <- readRDS("flights.rds")
+
 
 ```
 
@@ -158,35 +161,36 @@ flights <- readRDS("flights.rds")
 
 Drop unnecessary columns
 ```{r}
-str(flights)
-flights <- data.frame(flights)
-subset(flights, select=c(trip))
-
-
-flights <- subset(flights, select= - c(trip, cabinclass, to_city, from_city, airline_id, company_id,flight_id)) 
-
-flights <- data.frame(flights)
-flights <- data.table(flights)
-summarise(flights)
-
-table(subset(flights, select = c(span_days, stop, stay_days, adults, children, children_age, cabin_class, tripType)))
-
-flights <- subset(flights, select = -c(rate, span_days, stay_days, adults, children, children_age, cabin_class, tripType))
-# flights$rate <- NULL
-str(flights)
+# str(flights)
+# flights <- data.frame(flights)
+# subset(flights, select=c(trip))
+# 
+# 
+# flights <- subset(flights, select= - c(trip, cabinclass, to_city, from_city, airline_id, company_id,flight_id)) 
+# 
+# flights <- data.frame(flights)
+# flights <- data.table(flights)
+# summarise(flights)
+# 
+# table(subset(flights, select = c(span_days, stop, stay_days, adults, children, children_age, cabin_class, tripType)))
+# 
+# flights <- subset(flights, select = -c(rate, span_days, stay_days, adults, children, children_age, cabin_class, tripType))
+# # flights$rate <- NULL
+# str(flights)
 ```
 
 
 Convert data
 ```{r}
-str(flights)
-flights <- mutate(flights, price=as.numeric(gsub('[$,Â,£]','',as.character(flights$price))))
+# str(flights)
+# flights <- mutate(flights, price=as.numeric(gsub('[$,Â,£]','',as.character(flights$price))))
+# 
+# flights <- data.table(flights)
+# 
+# table(flights$company)
 
+flights <- readRDS("flights.rds")
 flights <- data.table(flights)
-
-table(flights$company)
-
-
 
 check <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
                    # company %in% c("China Southern Airlines", "China Eastern Airlines",
@@ -218,6 +222,9 @@ check$week <- as.numeric(format(check$start_date,"%W"))
 
 check<-ddply(check,.(yearmonthf),transform,monthweek=1+week-min(week))
 
+
+check <- filter(check, company %in% c("China Southern Airlines", "China Eastern Airlines", 
+                                      "Air China"))
 
 brewer.pal(8, "Purples")
 
@@ -303,11 +310,11 @@ head(check4)
 check4 <- filter(check4, company %in% c("Qantas Airways", "AirAsiaX", "China Southern Airlines", "Air China"))
 
 p2 <- plot_ly(data = check4, x = ~wday , y = ~departureHour, z = ~price, color = ~company,  type = "scatter3d", mode = "markers", marker=list(size= 5)) %>% layout(title = "Price by weekday and hour of the day - Shanghai to Sydney")
-
+p2
 # Create a shareable link to your chart
 # Set up API credentials: https://plot.ly/r/getting-started
-chart_link = plotly_POST(p2, filename="flightPrice3d")
-chart_link
+# chart_link = plotly_POST(p2, filename="flightPrice3d")
+# chart_link
 
 
 
@@ -364,39 +371,52 @@ dygraph(check_comb, main = "Flight Price Comparison") %>%
 
 
 ```{r}
+library(data.table)
+library(xts)
+library(magrittr)
+library(plotly)
+flights <- data.table(flights)
+unique(flights$search_date)
+unique(flights$company)
+
+library(dygraphs)
+
+
 check5 <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
-                   company %in% c("China Southern Airlines"),]
+                   # company %in% c("China Southern Airlines") &
+                   search_date %in% c(as.Date("2017-03-08"), as.Date("2017-03-14")),]
                    #, "China Eastern Airlines",
                    #                "China Airlines") &
                   #search_date == as.Date("2017-03-14"),
         # .(Avg_Price = mean(price)), by=list(company, start_date)]
 
-head(check5)
-
-check_list2 <- split(check5, check5$search_date)
-head(check_list2)
-check_comb2 <- c()
-
-
-for (n in names(check_list2)) {
-  check_comb2 <- cbind(check_comb2, xts(check_list2[[n]]$price, order.by=check_list2[[n]]$departure_time))
+c <- "Air China"
+for (c in unique(check5$company)) {
+  check_temp <- filter(check5, company==c)
+  check_list2 <- split(check_temp, check_temp$search_date)
+  check_comb2 <- c()
+  
+  for (n in names(check_list2)) {
+    check_comb2 <- cbind(check_comb2, xts(check_list2[[n]]$price, order.by=check_list2[[n]]$departure_time))
+  }
+  
+  # head(check_comb2)
+  colnames(check_comb2) <- names(check_list2)
+  check_comb2$price_mvmt <- check_comb2$'2017-03-14' - check_comb2$'2017-03-08'
+  
+  d <- dygraph(check_comb2, main = paste("Flight Price Movement", c, sep="-")) %>%
+    dyHighlight(highlightCircleSize = 5,
+                highlightSeriesBackgroundAlpha = 0.2,
+                hideOnMouseOut = FALSE) %>% dyRangeSelector()
+  print(d)
 }
-  
-  
-
-colnames(check_comb2) <- names(check_list2)
-dygraph(check_comb2, main = "Flight Price Comparison") %>%
-  dyHighlight(highlightCircleSize = 5, 
-              highlightSeriesBackgroundAlpha = 0.2,
-              hideOnMouseOut = FALSE) %>% dyRangeSelector()
 
 
 
-head(check_comb2)
 
+# check5$search_date <- as.factor(check5$search_date)
+# plot_ly(check5, x = ~departure_time, y = ~price, color = ~search_date, type = 'scatter', mode = 'markers') 
 
-check5$search_date <- as.factor(check5$search_date)
-plot_ly(check5, x = ~departure_time, y = ~price, color = ~search_date, type = 'scatter', mode = 'markers') 
 
 
 
@@ -405,23 +425,23 @@ plot_ly(check5, x = ~departure_time, y = ~price, color = ~search_date, type = 's
 
 
 ```{r}
-# A line graph
-ggplot(data=check, aes(x=start_date, y=Avg_Price, group=company, colour=company)) + # , 
-    facet_grid(company_group ~ .) + 
-    geom_line(aes(linetype=company), size=1) +     # Set linetype by sex
-    geom_point(size=3, fill="white") +         # Use larger points, fill with white
-    expand_limits(y=0) +                       # Set y range to include 0
-    # scale_colour_hue(name="Company",      # Set legend title
-    #                  l=30)  +                  # Use darker colors (lightness=30)
-    # scale_shape_manual(name="Company",
-    #                    values=c(22,21,22)) +      # Use points with a fill color
-    #scale_linetype_discrete(name="Company") +
-    xlab("Departure Date") + ylab("Price") + # Set axis labels
-    ggtitle("Price by Departure Date") +     # Set title
-    theme_bw() +
-    theme(legend.position=c(.7, .75))           # Position legend inside
-                                               # This must go after theme_bw
-
+# # A line graph
+# ggplot(data=check, aes(x=start_date, y=Avg_Price, group=company, colour=company)) + # , 
+#     facet_grid(company_group ~ .) + 
+#     geom_line(aes(linetype=company), size=1) +     # Set linetype by sex
+#     geom_point(size=3, fill="white") +         # Use larger points, fill with white
+#     expand_limits(y=0) +                       # Set y range to include 0
+#     # scale_colour_hue(name="Company",      # Set legend title
+#     #                  l=30)  +                  # Use darker colors (lightness=30)
+#     # scale_shape_manual(name="Company",
+#     #                    values=c(22,21,22)) +      # Use points with a fill color
+#     #scale_linetype_discrete(name="Company") +
+#     xlab("Departure Date") + ylab("Price") + # Set axis labels
+#     ggtitle("Price by Departure Date") +     # Set title
+#     theme_bw() +
+#     theme(legend.position=c(.7, .75))           # Position legend inside
+#                                                # This must go after theme_bw
+# 
 
 
 ```
@@ -430,27 +450,23 @@ ggplot(data=check, aes(x=start_date, y=Avg_Price, group=company, colour=company)
 ```{r}
 
 
-
-flight <- read.csv(file="D:/Data Science/Flight v2/flight_sydney_shanghai.csv", header=TRUE, sep=",")
-
-
-
-summary(flight)
-
-#drop class (all economy), adults (1), stay_days (0) 
-# flight<-select(flight, -c(class, adults, stay_days))
-#conver search_date to date
-flight<-mutate(flight, start_date=as.POSIXct(flight$start_date), 
-               search_date=as.POSIXct(flight$search_date))
-
-#generate route
-flight<-mutate(flight, route=paste(flight$from, flight$to, sep="-"))
-
-#drop dodgy record
-flight<-filter(flight, stop!="AU$698 .86")
+# 
+# flight <- read.csv(file="D:/Data Science/Flight v2/flight_sydney_shanghai.csv", header=TRUE, sep=",")
+# 
+# 
+# 
+# summary(flight)
+# 
+# #drop class (all economy), adults (1), stay_days (0) 
+# # flight<-select(flight, -c(class, adults, stay_days))
+# #conver search_date to date
+# flight<-mutate(flight, start_date=as.POSIXct(flight$start_date), 
+#                search_date=as.POSIXct(flight$search_date))
+# 
+# #generate route
+# flight<-mutate(flight, route=paste(flight$from, flight$to, sep="-"))
+# 
+# #drop dodgy record
+# flight<-filter(flight, stop!="AU$698 .86")
 
 ```
-
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
-
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
