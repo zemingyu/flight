@@ -95,57 +95,61 @@ library(RPostgreSQL)
 ### Merge tables together
 
 ```{r}
-flight <- readRDS("flight.rds")
-airline <- readRDS("airline.rds")
-flightPrice <- readRDS("flightPrice.rds")
-cabinclass <- readRDS("cabinclass.rds")
-city <- readRDS("city.rds")
-airlineCompany <- readRDS("airlineCompany.rds")
-trip <- readRDS("trip.rds")
+# flight <- readRDS("flight.rds")
+# airline <- readRDS("airline.rds")
+# flightPrice <- readRDS("flightPrice.rds")
+# cabinclass <- readRDS("cabinclass.rds")
+# city <- readRDS("city.rds")
+# airlineCompany <- readRDS("airlineCompany.rds")
+# trip <- readRDS("trip.rds")
+# 
+# str(flight)
+# table(flight$stay_days)
+# min(flightPrice$departure_time)
+# max(flightPrice$departure_time)
+# 
+# 
+# flightPrice <- data.table(flightPrice)
+# head(flightPrice)
+# 
+# flightPrice1 <- merge(flightPrice, flight, by.x="flight_id", by.y="id", all.x=TRUE)
+# 
+# colnames(airlineCompany) <- c("id", "company")
+# 
+# flightPrice2 <- merge(flightPrice1, airlineCompany, by.x="company_id", by.y="id", all.x=TRUE)
+# flightPrice3 <- merge(flightPrice2, airline, by.x="airline_id", by.y="id", all.x=TRUE)
+# 
+# fromCity <- city
+# colnames(fromCity) <- c("id", "from_city_name", "from_city_short_name", "from_city_url_name")
+# 
+# toCity <- city
+# colnames(toCity) <- c("id", "to_city_name", "to_city_short_name", "to_city_url_name")
+# 
+# flightPrice4 <- merge(flightPrice3, fromCity, by.x="from_city", by.y="id", all.x=TRUE)
+# flightPrice5 <- merge(flightPrice4, toCity, by.x="to_city", by.y="id", all.x=TRUE)
+# 
+# colnames(cabinclass) <- c("id", "cabin_class")
+# 
+# flightPrice6 <- merge(flightPrice5, cabinclass, by.x="cabinclass", by.y="id", all.x=TRUE)
+# 
+# colnames(trip) <- c("id", "tripType")
+# 
+# flightPrice7 <- merge(flightPrice6, trip, by.x="trip", by.y="id", all.x=TRUE)
+# 
+# flightPrice7 <- data.frame(flightPrice7)
+# 
+# flightPriceToCheck <- flightPrice7[is.na(flightPrice7$from_city), ]
+# flights <- flightPrice7[!is.na(flightPrice7$from_city), ]
+# 
+# rm(flightPrice1, flightPrice2, flightPrice3, flightPrice4, flightPrice5, flightPrice6)
+# 
+# gc()
+# 
+# 
+# 
 
-str(flight)
-table(flight$stay_days)
-min(flightPrice$departure_time)
-max(flightPrice$departure_time)
-
-
-flightPrice <- data.table(flightPrice)
-head(flightPrice)
-
-flightPrice1 <- merge(flightPrice, flight, by.x="flight_id", by.y="id", all.x=TRUE)
-
-colnames(airlineCompany) <- c("id", "company")
-
-flightPrice2 <- merge(flightPrice1, airlineCompany, by.x="company_id", by.y="id", all.x=TRUE)
-flightPrice3 <- merge(flightPrice2, airline, by.x="airline_id", by.y="id", all.x=TRUE)
-
-fromCity <- city
-colnames(fromCity) <- c("id", "from_city_name", "from_city_short_name", "from_city_url_name")
-
-toCity <- city
-colnames(toCity) <- c("id", "to_city_name", "to_city_short_name", "to_city_url_name")
-
-flightPrice4 <- merge(flightPrice3, fromCity, by.x="from_city", by.y="id", all.x=TRUE)
-flightPrice5 <- merge(flightPrice4, toCity, by.x="to_city", by.y="id", all.x=TRUE)
-
-colnames(cabinclass) <- c("id", "cabin_class")
-
-flightPrice6 <- merge(flightPrice5, cabinclass, by.x="cabinclass", by.y="id", all.x=TRUE)
-
-colnames(trip) <- c("id", "tripType")
-
-flightPrice7 <- merge(flightPrice6, trip, by.x="trip", by.y="id", all.x=TRUE)
-
-flightPrice7 <- data.frame(flightPrice7)
-
-flightPriceToCheck <- flightPrice7[is.na(flightPrice7$from_city), ]
-flights <- flightPrice7[!is.na(flightPrice7$from_city), ]
-
-rm(flightPrice1, flightPrice2, flightPrice3, flightPrice4, flightPrice5, flightPrice6)
-
-gc()
-
-
+# saveRDS(flights, "flights.rds")
+flights <- readRDS("flights.rds")
 
 ```
 
@@ -314,6 +318,90 @@ chart_link
 
 ```
 
+
+Time series graphs
+
+```{r}
+library(dygraphs)
+library(zoo)
+library(xts)
+head(check)
+# ?dygraph
+# 
+# unique(check$company)
+# check_sa <- filter(check, company == "Singapore Airlines")
+# head(check_sa)
+# check_sa <- xts(check_sa$Avg_Price, order.by=check_sa$start_date)
+# 
+# check_csa <- filter(check, company == "China Southern Airlines")
+# head(check_csa)
+# check_csa <- xts(check_csa$Avg_Price, order.by=check_csa$start_date)
+# 
+# names(group_by(check, company))
+# 
+check_list <- split(check, check$company)
+# check_comb <- cbind(check_sa, check_csa)
+# colnames(check_comb) <- c("Singapore Airline", "China Southern Airlines")
+# dygraph(check_comb) %>% dyRangeSelector()
+
+
+check_comb <- c()
+
+
+for (n in names(check_list)) {
+  check_comb <- cbind(check_comb, xts(check_list[[n]]$Avg_Price, order.by=check_list[[n]]$start_date))
+}
+
+colnames(check_comb) <- names(check_list)
+dygraph(check_comb, main = "Flight Price Comparison") %>%
+  dyHighlight(highlightCircleSize = 5, 
+              highlightSeriesBackgroundAlpha = 0.2,
+              hideOnMouseOut = FALSE) %>% dyRangeSelector()
+
+```
+
+
+
+
+```{r}
+check5 <-flights[from_city_name=="shanghai" & to_city_name=="sydney" & 
+                   company %in% c("China Southern Airlines"),]
+                   #, "China Eastern Airlines",
+                   #                "China Airlines") &
+                  #search_date == as.Date("2017-03-14"),
+        # .(Avg_Price = mean(price)), by=list(company, start_date)]
+
+head(check5)
+
+check_list2 <- split(check5, check5$search_date)
+head(check_list2)
+check_comb2 <- c()
+
+
+for (n in names(check_list2)) {
+  check_comb2 <- cbind(check_comb2, xts(check_list2[[n]]$price, order.by=check_list2[[n]]$departure_time))
+}
+  
+  
+
+colnames(check_comb2) <- names(check_list2)
+dygraph(check_comb2, main = "Flight Price Comparison") %>%
+  dyHighlight(highlightCircleSize = 5, 
+              highlightSeriesBackgroundAlpha = 0.2,
+              hideOnMouseOut = FALSE) %>% dyRangeSelector()
+
+
+
+head(check_comb2)
+
+
+check5$search_date <- as.factor(check5$search_date)
+plot_ly(check5, x = ~departure_time, y = ~price, color = ~search_date, type = 'scatter', mode = 'markers') 
+
+
+
+
+```
 
 
 ```{r}
