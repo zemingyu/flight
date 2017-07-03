@@ -89,3 +89,69 @@
 [W 23:03:02.520 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
 [I 23:03:48.972 NotebookApp] Saving file at /download unzip zip upload.ipynb
 [W 23:03:48.973 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[W 23:13:41.990 NotebookApp] WebSocket ping timeout after 119976 ms.
+[W 23:13:56.350 NotebookApp] WebSocket ping timeout after 119970 ms.
+[W 00:04:33.652 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[W 00:04:46.864 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 2.80ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[W 01:44:58.268 NotebookApp] SSL Error on 9 ('31.44.80.195', 63528): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
+[I 02:28:57.785 NotebookApp] 302 GET / (203.219.10.50) 0.48ms
+[W 02:29:18.644 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 3.87ms referer=https://54.252.200.143:8888/notebooks/test%20clear%20folder.ipynb
+[W 02:33:52.936 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[W 02:34:05.791 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 19.95ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[I 02:35:18.929 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:37:19.140 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:37:52.671 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:39:18.821 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:41:18.818 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:43:18.821 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:45:18.845 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:47:18.868 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:49:18.883 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:49:23.716 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:50:16.620 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:51:18.884 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:53:57.862 NotebookApp] Kernel interrupted: beb45f7b-a452-445a-88b6-da0e353db5e1
+[I 02:54:12.707 NotebookApp] Kernel shutdown: beb45f7b-a452-445a-88b6-da0e353db5e1
+[I 02:56:04.950 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 02:56:04.950 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 02:57:18.879 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:59:19.367 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 02:59:48.395 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 03:00:04.189 NotebookApp] SSL Error on 12 ('31.44.80.195', 64356): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
+[I 03:01:19.050 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 03:02:20.981 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 03:02:20.982 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 03:02:49.202 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 03:02:49.202 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 03:03:19.830 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 03:03:43.536 NotebookApp] Kernel does not exist: beb45f7b-a452-445a-88b6-da0e353db5e1
+[W 03:03:43.537 NotebookApp] 404 POST /api/kernels/beb45f7b-a452-445a-88b6-da0e353db5e1/interrupt (203.219.10.50) 1.04ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[W 03:03:45.352 NotebookApp] Kernel does not exist: beb45f7b-a452-445a-88b6-da0e353db5e1
+[W 03:03:45.353 NotebookApp] 404 POST /api/kernels/beb45f7b-a452-445a-88b6-da0e353db5e1/interrupt (203.219.10.50) 1.09ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[W 03:03:45.906 NotebookApp] Kernel does not exist: beb45f7b-a452-445a-88b6-da0e353db5e1
+[W 03:03:45.906 NotebookApp] 404 POST /api/kernels/beb45f7b-a452-445a-88b6-da0e353db5e1/interrupt (203.219.10.50) 1.06ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[W 03:03:46.155 NotebookApp] Kernel does not exist: beb45f7b-a452-445a-88b6-da0e353db5e1
+[W 03:03:46.155 NotebookApp] 404 POST /api/kernels/beb45f7b-a452-445a-88b6-da0e353db5e1/interrupt (203.219.10.50) 1.03ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[W 03:04:46.428 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[I 03:05:01.901 NotebookApp] Kernel started: 15acda53-cb95-445e-83c1-0117ab55cc21
+[W 03:05:01.910 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 7.19ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[I 03:05:20.930 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 03:06:05.070 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 03:07:17.804 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 03:07:17.805 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 03:07:20.971 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 03:08:43.139 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 03:08:43.139 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 03:09:44.439 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 03:09:44.439 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 03:12:11.272 NotebookApp] 302 GET / (203.219.10.50) 0.42ms
+[W 20:51:35.256 NotebookApp] SSL Error on 9 ('93.174.93.136', 45241): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
+[W 23:03:05.762 NotebookApp] SSL Error on 9 ('77.72.83.141', 51174): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
+[I 10:07:15.196 NotebookApp] 302 GET / (203.219.10.50) 200.27ms
+[W 10:13:01.951 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 49.89ms referer=https://54.252.200.143:8888/notebooks/upload%20to%20s3%20and%20clear%20folder.ipynb
+[W 10:14:35.472 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[W 10:15:42.213 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 569.89ms referer=https://54.252.200.143:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[C 10:15:51.053 NotebookApp] received signal 15, stopping
+[I 10:15:52.053 NotebookApp] Shutting down kernels
+[I 10:15:53.059 NotebookApp] Kernel shutdown: 15acda53-cb95-445e-83c1-0117ab55cc21
+[I 10:15:54.823 NotebookApp] Kernel shutdown: 756a68c1-693f-4fdf-afb8-da93626567ad
