@@ -1,169 +1,58 @@
-[W 11:08:38.083 NotebookApp] Unrecognized JSON config file version, assuming version 1
-[I 11:08:41.084 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
-[I 11:08:41.095 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
-[W 11:08:41.232 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
-[I 11:08:42.268 NotebookApp] [nb_anacondacloud] enabled
-[I 11:08:42.689 NotebookApp] ✓ nbpresent HTML export ENABLED
-[W 11:08:42.689 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
-[I 11:08:42.693 NotebookApp] [nb_conda] enabled
-[I 11:08:42.697 NotebookApp] Serving notebooks from local directory: /home/ubuntu/work/flight
-[I 11:08:42.697 NotebookApp] 0 active kernels 
-[I 11:08:42.697 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
-[I 11:08:42.697 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 11:09:01.638 NotebookApp] 302 GET / (203.219.10.50) 0.76ms
-[W 11:11:08.914 NotebookApp] Notebook consolidate and upload to s3.ipynb is not trusted
-[I 11:11:13.582 NotebookApp] Kernel started: a63d8d96-ebf0-4f3e-95f8-9f26d55d45c1
-[W 11:11:13.604 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 11.59ms referer=https://54.252.200.143:8888/notebooks/consolidate%20and%20upload%20to%20s3.ipynb
-[W 11:13:29.539 NotebookApp] Notebook data_ETL - v1.1 prod version_local.ipynb is not trusted
-[I 11:13:41.298 NotebookApp] Kernel started: 76c63bd2-0c1c-4ef3-894b-ac4a248acf9a
-[W 11:13:41.305 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 5.41ms referer=https://54.252.200.143:8888/notebooks/data_ETL%20-%20v1.1%20prod%20version_local.ipynb
-[W 11:14:07.558 NotebookApp] Notebook data_ETL.ipynb is not trusted
-[I 11:14:09.252 NotebookApp] Kernel started: adc77215-a096-43ad-a080-a635779171f7
-[W 11:14:09.258 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 2.48ms referer=https://54.252.200.143:8888/notebooks/data_ETL.ipynb
-[I 11:15:19.597 NotebookApp] Creating new notebook in 
-[I 11:15:26.336 NotebookApp] Kernel started: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[W 11:15:26.371 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 1.31ms referer=https://54.252.200.143:8888/notebooks/Untitled.ipynb?kernel_name=Python%20[Root]
-[I 11:17:26.353 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[W 11:20:58.921 NotebookApp] WebSocket ping timeout after 119972 ms.
-[I 11:22:16.300 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:35:13.175 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:47:48.270 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:50:52.070 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:51:03.960 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:51:04.899 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:32.224 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:33.000 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:33.216 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:33.432 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:33.647 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:51:42.715 NotebookApp] Kernel restarted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 11:52:17.950 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:52:29.576 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:52:52.560 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:53:13.875 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[W 11:54:40.171 NotebookApp] Notebook test_pyspark.ipynb is not trusted
-[I 11:54:49.492 NotebookApp] Kernel started: 9b58b435-c62b-4b19-b976-db7b216bd0e3
-[W 11:54:49.501 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 6.15ms referer=https://54.252.200.143:8888/notebooks/test_pyspark.ipynb
-[I 11:56:13.406 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:59:40.926 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 11:59:58.719 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:00:18.687 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:03:12.301 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:06:41.211 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:09:58.648 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:10:13.416 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:10:22.809 NotebookApp] Kernel restarted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:27.305 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:10:32.424 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:32.975 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:33.190 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:33.467 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:33.620 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:33.814 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:34.231 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:34.848 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:35.331 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:37.873 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:10:50.105 NotebookApp] Kernel interrupted: 4924d1bb-f8e5-48ab-b44c-61bd990376ea
-[I 12:12:20.930 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:12:28.735 NotebookApp] Kernel shutdown: a63d8d96-ebf0-4f3e-95f8-9f26d55d45c1
-[I 12:12:29.143 NotebookApp] Kernel shutdown: 76c63bd2-0c1c-4ef3-894b-ac4a248acf9a
-[I 12:12:29.552 NotebookApp] Kernel shutdown: adc77215-a096-43ad-a080-a635779171f7
-[I 12:12:29.961 NotebookApp] Kernel shutdown: 9b58b435-c62b-4b19-b976-db7b216bd0e3
-[I 12:13:36.600 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:16:22.501 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:17:13.656 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:20:13.033 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:24:03.629 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:30:00.477 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:31:42.577 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:33:19.318 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:33:38.807 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:33:53.286 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:39:29.564 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:43:13.713 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:43:39.895 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:44:34.674 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:48:35.586 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:49:06.011 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:49:26.867 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:55:37.633 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:55:52.495 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:56:23.162 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:56:26.453 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:56:41.762 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:56:47.548 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 12:59:36.864 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:00:47.966 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:01:13.757 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:01:16.027 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:02:26.315 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:03:39.475 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:05:12.446 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:10:44.054 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:17:39.371 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:21:52.001 NotebookApp] Saving file at /data_ETL - v1.1 prod version_local.ipynb
-[W 13:21:52.002 NotebookApp] Saving untrusted notebook data_ETL - v1.1 prod version_local.ipynb
-[I 13:24:38.961 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:27:10.861 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:27:54.197 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:28:13.712 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:28:43.174 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:28:55.803 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:29:18.601 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:29:37.734 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:29:42.280 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:30:24.693 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:30:31.904 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:31:47.302 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:37:30.344 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:39:41.077 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:41:52.119 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:44:55.436 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:47:53.729 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:49:11.731 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:52:24.986 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:52:52.472 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:54:54.850 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:57:17.508 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 13:59:55.051 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:00:12.115 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:00:25.098 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:06:59.754 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:07:19.114 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:07:31.988 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:10:42.823 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:11:39.653 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:13:10.483 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:14:55.027 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:16:31.615 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:18:13.797 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:18:34.706 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:18:48.332 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:19:33.916 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:20:41.316 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:22:25.024 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:22:37.875 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:26:44.606 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:26:58.246 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:27:11.997 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:29:13.363 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:29:18.087 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:29:36.218 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:30:03.486 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:30:09.569 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:30:18.615 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:30:44.699 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:31:50.744 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:32:04.860 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:33:13.286 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:35:06.487 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:37:25.357 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:40:58.570 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:41:29.266 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:41:42.175 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:41:56.798 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:42:09.795 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:42:41.412 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:43:17.549 NotebookApp] Saving file at /download unzip zip upload.ipynb
-[I 14:43:30.499 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 11:58:35.278 NotebookApp] Unrecognized JSON config file version, assuming version 1
+[I 11:58:38.585 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
+[I 11:58:38.597 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[W 11:58:38.654 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
+[I 11:58:38.764 NotebookApp] [nb_conda] enabled
+[I 11:58:38.968 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 11:58:38.969 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[I 11:58:39.972 NotebookApp] [nb_anacondacloud] enabled
+[I 11:58:39.976 NotebookApp] Serving notebooks from local directory: /home/ubuntu/work/flight
+[I 11:58:39.976 NotebookApp] 0 active kernels 
+[I 11:58:39.976 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
+[I 11:58:39.976 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 11:59:01.074 NotebookApp] 302 GET / (203.219.10.50) 0.85ms
+[W 11:59:19.909 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[I 11:59:32.298 NotebookApp] Kernel started: 1dd772d8-46ec-40e5-b052-2e913da5ad88
+[W 11:59:32.324 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 14.55ms referer=https://54.252.173.175:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[I 12:01:51.841 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:01:51.842 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:05:25.269 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:05:25.270 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:08:45.820 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:08:45.821 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:09:15.188 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:09:15.189 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:12:05.387 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:12:05.388 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[W 12:13:01.606 NotebookApp] Notebook upload to s3 and clear folder.ipynb is not trusted
+[I 12:13:02.876 NotebookApp] Kernel started: da504bd4-45ef-4818-abaa-ce292db6f998
+[W 12:13:02.935 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 1.55ms referer=https://54.252.173.175:8888/notebooks/upload%20to%20s3%20and%20clear%20folder.ipynb
+[I 12:13:42.482 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:13:42.484 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:13:58.542 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:13:58.543 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:14:08.164 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:14:08.165 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:15:03.559 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 12:15:03.559 NotebookApp] Saving untrusted notebook upload to s3 and clear folder.ipynb
+[I 12:15:43.305 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 12:15:43.306 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[I 12:39:03.324 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 12:39:20.275 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 13:05:33.141 NotebookApp] WebSocket ping timeout after 119324 ms.
+[W 13:06:33.685 NotebookApp] WebSocket ping timeout after 112267 ms.
+[I 13:43:03.135 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 13:45:03.267 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 13:48:24.524 NotebookApp] Saving file at /download unzip zip upload.ipynb
+[W 13:48:24.528 NotebookApp] Saving untrusted notebook download unzip zip upload.ipynb
+[W 17:03:45.103 NotebookApp] SSL Error on 9 ('93.174.93.136', 33494): [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:645)
+[I 08:50:06.498 NotebookApp] 302 GET / (203.219.10.50) 1.15ms
+[W 08:50:47.192 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 2.41ms referer=https://54.252.173.175:8888/notebooks/upload%20to%20s3%20and%20clear%20folder.ipynb
+[I 08:52:48.599 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 08:56:49.177 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 09:03:17.688 NotebookApp] WebSocket ping timeout after 113643 ms.
+[I 09:04:50.215 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[I 09:05:03.542 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
+[W 09:12:38.165 NotebookApp] Notebook download unzip zip upload.ipynb is not trusted
+[W 09:12:50.311 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 2.31ms referer=https://54.252.173.175:8888/notebooks/download%20unzip%20zip%20upload.ipynb
+[I 09:19:58.148 NotebookApp] Saving file at /upload to s3 and clear folder.ipynb
