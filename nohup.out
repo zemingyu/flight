@@ -1,375 +1,0 @@
-[W 11:23:23.947 NotebookApp] Unrecognized JSON config file version, assuming version 1
-[I 11:23:24.821 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
-[W 11:23:24.885 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using authentication. This is highly insecure and not recommended.
-[I 11:23:24.900 NotebookApp] [nb_conda] enabled
-[I 11:23:25.000 NotebookApp] ✓ nbpresent HTML export ENABLED
-[W 11:23:25.000 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
-[I 11:23:25.079 NotebookApp] [nb_anacondacloud] enabled
-[I 11:23:25.083 NotebookApp] Serving notebooks from local directory: /home/ubuntu/work/flight
-[I 11:23:25.083 NotebookApp] 0 active kernels 
-[I 11:23:25.083 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/
-[I 11:23:25.084 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[W 11:23:55.016 NotebookApp] Notebook data_ETL - v1.1 prod version_local.ipynb is not trusted
-[I 11:24:05.336 NotebookApp] Kernel started: f1111cca-e541-4e4a-934a-1070b2bb601d
-[W 11:24:05.364 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 15.23ms referer=https://13.210.14.146:8888/notebooks/data_ETL%20-%20v1.1%20prod%20version_local.ipynb
-[W 11:24:09.349 NotebookApp] 404 GET /api/kernels/54c6f7d5-4811-4d9d-8baa-e65df4c991c2/channels?session_id=A76482FBB930439FAC15AFF48610D554 (203.219.10.50): Kernel does not exist: 54c6f7d5-4811-4d9d-8baa-e65df4c991c2
-[W 11:24:09.350 NotebookApp] 404 GET /api/kernels/54c6f7d5-4811-4d9d-8baa-e65df4c991c2/channels?session_id=A76482FBB930439FAC15AFF48610D554 (203.219.10.50) 4.93ms referer=None
-[I 11:24:12.379 NotebookApp] Kernel started: b1f3706b-2722-4676-95df-08859f7a6913
-[W 11:24:12.383 NotebookApp] 404 GET /kernelspecs/Python%20[Root]/logo-64x64.png (203.219.10.50) 1.47ms referer=https://13.210.14.146:8888/notebooks/consolidate%20and%20upload%20to%20s3.ipynb
-[W 11:24:12.762 NotebookApp] 404 GET /api/kernels/f648a1fa-29a3-4af2-a767-1a3406c25cf0/channels?session_id=09273760DF094B8AACD8B9F0A6CE4910 (203.219.10.50): Kernel does not exist: f648a1fa-29a3-4af2-a767-1a3406c25cf0
-[W 11:24:12.763 NotebookApp] 404 GET /api/kernels/f648a1fa-29a3-4af2-a767-1a3406c25cf0/channels?session_id=09273760DF094B8AACD8B9F0A6CE4910 (203.219.10.50) 4.80ms referer=None
-[I 11:24:52.458 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:26:14.833 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:26:32.856 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-17/06/26 11:28:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-[I 11:28:15.040 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[Stage 0:>                                                        (0 + 0) / 112][Stage 0:=======>                                                (15 + 1) / 112][Stage 0:=============>                                          (27 + 1) / 112][Stage 0:====================>                                   (41 + 1) / 112][Stage 0:============================>                           (56 + 1) / 112][Stage 0:===================================>                    (70 + 1) / 112][Stage 0:===========================================>            (86 + 1) / 112][Stage 0:===================================================>   (105 + 1) / 112]                                                                                SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-[Stage 2:=============================>                          (58 + 1) / 112][Stage 2:=======================================>                (79 + 1) / 112][Stage 2:=================================================>      (98 + 1) / 112]                                                                                [Stage 3:=============================================>           (15 + 1) / 19]                                                                                17/06/26 11:28:49 WARN Utils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.debug.maxToStringFields' in SparkEnv.conf.
-[Stage 10:>                                                         (0 + 1) / 4][Stage 10:==============>                                           (1 + 1) / 4][Stage 10:=============================>                            (2 + 1) / 4][Stage 10:===========================================>              (3 + 1) / 4][Stage 11:=================>                                     (65 + 1) / 200][Stage 11:==========================>                            (95 + 1) / 200][Stage 11:=================================>                    (125 + 1) / 200][Stage 11:==========================================>           (159 + 1) / 200][Stage 11:===================================================>  (192 + 1) / 200]                                                                                17/06/26 11:29:02 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:02 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:>                                                        (0 + 1) / 19]17/06/26 11:29:03 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:03 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:03 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:===>                                                     (1 + 1) / 19]17/06/26 11:29:03 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:======>                                                  (2 + 1) / 19]17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:=========>                                               (3 + 1) / 19]17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:============>                                            (4 + 1) / 19]17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:===============>                                         (5 + 1) / 19]17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:==================>                                      (6 + 1) / 19]17/06/26 11:29:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:=====================>                                   (7 + 1) / 19]17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[I 11:29:06.359 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:========================>                                (8 + 1) / 19]17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:===========================>                             (9 + 1) / 19]17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:=============================>                          (10 + 1) / 19]17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:================================>                       (11 + 1) / 19]17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:===================================>                    (12 + 1) / 19]17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:======================================>                 (13 + 1) / 19]17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:=========================================>              (14 + 1) / 19]17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:============================================>           (15 + 1) / 19]17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:===============================================>        (16 + 1) / 19]17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:==================================================>     (17 + 1) / 19]17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:29:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 12:=====================================================>  (18 + 1) / 19][Stage 13:=>                                                      (6 + 1) / 200][Stage 13:==>                                                    (10 + 1) / 200][Stage 13:====>                                                  (16 + 1) / 200][Stage 13:======>                                                (22 + 1) / 200][Stage 13:=======>                                               (28 + 1) / 200][Stage 13:=========>                                             (34 + 1) / 200][Stage 13:===========>                                           (42 + 1) / 200][Stage 13:=============>                                         (48 + 1) / 200][Stage 13:===============>                                       (55 + 1) / 200][Stage 13:================>                                      (61 + 1) / 200][Stage 13:==================>                                    (69 + 1) / 200][Stage 13:=====================>                                 (77 + 1) / 200][Stage 13:=======================>                               (85 + 1) / 200][Stage 13:=========================>                             (93 + 1) / 200][Stage 13:===========================>                          (101 + 1) / 200][Stage 13:==============================>                       (112 + 1) / 200][Stage 13:=================================>                    (123 + 1) / 200][Stage 13:===================================>                  (132 + 1) / 200][Stage 13:======================================>               (143 + 1) / 200][Stage 13:=========================================>            (154 + 1) / 200][Stage 13:============================================>         (165 + 1) / 200][Stage 13:===============================================>      (176 + 1) / 200][Stage 13:==================================================>   (186 + 1) / 200][Stage 13:=====================================================>(197 + 1) / 200]                                                                                17/06/26 11:30:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:>                                                        (0 + 1) / 19][I 11:30:14.864 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:30:15 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:21 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:26 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:===>                                                     (1 + 1) / 19]17/06/26 11:30:31 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:36 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:42 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:======>                                                  (2 + 1) / 19]17/06/26 11:30:47 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:30:56 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:=========>                                               (3 + 1) / 19]17/06/26 11:31:01 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:11 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:============>                                            (4 + 1) / 19]17/06/26 11:31:15 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:20 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:24 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:29 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:===============>                                         (5 + 1) / 19]17/06/26 11:31:33 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:37 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:41 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:44 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:==================>                                      (6 + 1) / 19]17/06/26 11:31:48 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:55 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:31:58 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:01 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:=====================>                                   (7 + 1) / 19]17/06/26 11:32:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:08 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:11 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:14 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[I 11:32:14.857 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:32:17 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:========================>                                (8 + 1) / 19]17/06/26 11:32:20 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:23 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:26 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:29 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:32 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:===========================>                             (9 + 1) / 19]17/06/26 11:32:35 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:38 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:41 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:43 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:46 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:49 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:=============================>                          (10 + 1) / 19]17/06/26 11:32:52 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:54 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:57 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:32:59 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:02 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:05 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:================================>                       (11 + 1) / 19]17/06/26 11:33:07 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:13 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:15 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:18 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:21 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:===================================>                    (12 + 1) / 19]17/06/26 11:33:23 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:26 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:28 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:31 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:33 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:35 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:======================================>                 (13 + 1) / 19]17/06/26 11:33:38 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:40 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:43 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:45 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:48 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:50 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:53 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:=========================================>              (14 + 1) / 19]17/06/26 11:33:55 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:33:57 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:00 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:02 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:04 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:06 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:09 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:============================================>           (15 + 1) / 19]17/06/26 11:34:10 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:13 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:15 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:17 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:18 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:20 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:22 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:24 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:===============================================>        (16 + 1) / 19]17/06/26 11:34:25 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:27 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:27 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:28 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:29 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:30 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:31 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:32 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:33 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:34 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:34 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:35 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:36 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:==================================================>     (17 + 1) / 19]17/06/26 11:34:37 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:37 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:38 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:39 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:39 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:40 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:41 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:42 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:42 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:43 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:44 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:44 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:45 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:46 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:46 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[Stage 14:=====================================================>  (18 + 1) / 19]17/06/26 11:34:47 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:48 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:48 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:49 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:49 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:50 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:50 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:50 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:34:51 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-                                                                                [I 11:36:15.080 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:39:18 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[I 11:40:14.860 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:40:51.299 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:40:55.693 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:41:43.754 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:41:44 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-17/06/26 11:41:44 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[I 11:42:14.880 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:44:14.874 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 11:44:47 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-[I 11:46:15.328 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:48:14.905 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:50:14.884 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:50:53.061 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:51:03.380 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:52:14.885 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:53:15.870 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:54:14.907 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:54:44.640 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:56:14.904 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:58:15.126 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:59:03.277 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 11:59:36.895 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 12:00:14.939 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-17/06/26 12:00:25 WARN ParquetRecordReader: Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
-ERROR:root:Exception while sending command.
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 1035, in send_command
-    raise Py4JNetworkError("Answer from Java side is empty")
-py4j.protocol.Py4JNetworkError: Answer from Java side is empty
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 883, in send_command
-    response = connection.send_command(command)
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 1040, in send_command
-    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
-py4j.protocol.Py4JNetworkError: Error while receiving
-ERROR:root:Exception while sending command.
-Traceback (most recent call last):
-  File "/home/ubuntu/spark-2.1.1-bin-hadoop2.7/python/pyspark/sql/dataframe.py", line 391, in collect
-    port = self._jdf.collectToPython()
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 1133, in __call__
-    answer, self.gateway_client, self.target_id, self.name)
-  File "/home/ubuntu/spark-2.1.1-bin-hadoop2.7/python/pyspark/sql/utils.py", line 63, in deco
-    return f(*a, **kw)
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/protocol.py", line 327, in get_return_value
-    format(target_id, ".", name))
-py4j.protocol.Py4JError: An error occurred while calling o358.collectToPython
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 1035, in send_command
-    raise Py4JNetworkError("Answer from Java side is empty")
-py4j.protocol.Py4JNetworkError: Answer from Java side is empty
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 883, in send_command
-    response = connection.send_command(command)
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 1040, in send_command
-    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
-py4j.protocol.Py4JNetworkError: Error while receiving
-ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:46754)
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 827, in _get_connection
-    connection = self.deque.pop()
-IndexError: pop from an empty deque
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 963, in start
-    self.socket.connect((self.address, self.port))
-ConnectionRefusedError: [Errno 111] Connection refused
-[I 12:00:59.880 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 12:01:07.315 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 12:02:13.710 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-[I 12:02:16.643 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
-ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:46754)
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 827, in _get_connection
-    connection = self.deque.pop()
-IndexError: pop from an empty deque
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ubuntu/anaconda3/lib/python3.5/site-packages/py4j/java_gateway.py", line 963, in start
-    self.socket.connect((self.address, self.port))
-ConnectionRefusedError: [Errno 111] Connection refused
-[I 12:03:47.706 NotebookApp] Saving file at /consolidate and upload to s3.ipynb
