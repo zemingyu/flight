@@ -1,0 +1,65 @@
+11-21 11:43:01.548 172.17.0.2:54321      1121   #r thread INFO: Found XGBoost backend with library: xgboost4j
+11-21 11:43:01.573 172.17.0.2:54321      1121   #r thread INFO: Your system supports only minimal version of XGBoost (no GPUs, no multithreading)!
+11-21 11:43:01.573 172.17.0.2:54321      1121   #r thread INFO: ----- H2O started  -----
+11-21 11:43:01.574 172.17.0.2:54321      1121   #r thread INFO: Build git branch: rel-weierstrass
+11-21 11:43:01.574 172.17.0.2:54321      1121   #r thread INFO: Build git hash: f1f65fe382ac4a0dc4631b9ee1468eb8eef7b27e
+11-21 11:43:01.574 172.17.0.2:54321      1121   #r thread INFO: Build git describe: jenkins-3.14.0.6-6-gf1f65fe38
+11-21 11:43:01.574 172.17.0.2:54321      1121   #r thread INFO: Build project version: 3.14.0.7 (latest version: 3.14.0.7)
+11-21 11:43:01.574 172.17.0.2:54321      1121   #r thread INFO: Build age: 1 month
+11-21 11:43:01.575 172.17.0.2:54321      1121   #r thread INFO: Built by: 'jenkins'
+11-21 11:43:01.575 172.17.0.2:54321      1121   #r thread INFO: Built on: '2017-10-20 18:37:17'
+11-21 11:43:01.575 172.17.0.2:54321      1121   #r thread INFO: Watchdog Build git branch: (unknown)
+11-21 11:43:01.576 172.17.0.2:54321      1121   #r thread INFO: Watchdog Build git hash: (unknown)
+11-21 11:43:01.576 172.17.0.2:54321      1121   #r thread INFO: Watchdog Build git describe: (unknown)
+11-21 11:43:01.576 172.17.0.2:54321      1121   #r thread INFO: Watchdog Build project version: (unknown)
+11-21 11:43:01.576 172.17.0.2:54321      1121   #r thread INFO: Watchdog Built by: (unknown)
+11-21 11:43:01.576 172.17.0.2:54321      1121   #r thread INFO: Watchdog Built on: (unknown)
+11-21 11:43:01.577 172.17.0.2:54321      1121   #r thread INFO: XGBoost Build git branch: (unknown)
+11-21 11:43:01.577 172.17.0.2:54321      1121   #r thread INFO: XGBoost Build git hash: (unknown)
+11-21 11:43:01.577 172.17.0.2:54321      1121   #r thread INFO: XGBoost Build git describe: (unknown)
+11-21 11:43:01.577 172.17.0.2:54321      1121   #r thread INFO: XGBoost Build project version: (unknown)
+11-21 11:43:01.578 172.17.0.2:54321      1121   #r thread INFO: XGBoost Built by: (unknown)
+11-21 11:43:01.578 172.17.0.2:54321      1121   #r thread INFO: XGBoost Built on: (unknown)
+11-21 11:43:01.578 172.17.0.2:54321      1121   #r thread INFO: Processed H2O arguments: [-name, sparkling-water-jovyan_local-1511264464675, -ga_opt_out, -log_level, INFO, -baseport, 54321, -ip, 172.17.0.2, -log_dir, /home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/h2ologs/local-1511264464675]
+11-21 11:43:01.578 172.17.0.2:54321      1121   #r thread INFO: Java availableProcessors: 1
+11-21 11:43:01.579 172.17.0.2:54321      1121   #r thread INFO: Java heap totalMemory: 87.7 MB
+11-21 11:43:01.579 172.17.0.2:54321      1121   #r thread INFO: Java heap maxMemory: 989.9 MB
+11-21 11:43:01.579 172.17.0.2:54321      1121   #r thread INFO: Java version: Java 1.8.0_151 (from Oracle Corporation)
+11-21 11:43:01.579 172.17.0.2:54321      1121   #r thread INFO: JVM launch parameters: [-Xmx1g]
+11-21 11:43:01.580 172.17.0.2:54321      1121   #r thread INFO: OS version: Linux 4.4.0-1038-aws (amd64)
+11-21 11:43:01.580 172.17.0.2:54321      1121   #r thread INFO: Machine physical memory: 990.9 MB
+11-21 11:43:01.580 172.17.0.2:54321      1121   #r thread INFO: X-h2o-cluster-id: 1511264578432
+11-21 11:43:01.581 172.17.0.2:54321      1121   #r thread INFO: User name: 'jovyan'
+11-21 11:43:01.581 172.17.0.2:54321      1121   #r thread INFO: Opted out of sending usage metrics.
+11-21 11:43:01.581 172.17.0.2:54321      1121   #r thread INFO: IPv6 stack selected: false
+11-21 11:43:01.581 172.17.0.2:54321      1121   #r thread INFO: Possible IP Address: eth0 (eth0), 172.17.0.2
+11-21 11:43:01.582 172.17.0.2:54321      1121   #r thread INFO: Possible IP Address: lo (lo), 127.0.0.1
+11-21 11:43:01.582 172.17.0.2:54321      1121   #r thread INFO: H2O node running in unencrypted mode.
+11-21 11:43:01.592 172.17.0.2:54321      1121   #r thread INFO: Internal communication uses port: 54322
+11-21 11:43:01.592 172.17.0.2:54321      1121   #r thread INFO: Listening for HTTP and REST traffic on http://172.17.0.2:54321/
+11-21 11:43:01.648 172.17.0.2:54321      1121   #r thread INFO: H2O cloud name: 'sparkling-water-jovyan_local-1511264464675' on /172.17.0.2:54321, discovery address /239.114.49.146:61298
+11-21 11:43:01.648 172.17.0.2:54321      1121   #r thread INFO: If you have trouble connecting, try SSH tunneling from your local machine (e.g., via port 55555):
+11-21 11:43:01.648 172.17.0.2:54321      1121   #r thread INFO:   1. Open a terminal and run 'ssh -L 55555:localhost:54321 jovyan@172.17.0.2'
+11-21 11:43:01.648 172.17.0.2:54321      1121   #r thread INFO:   2. Point your browser to http://localhost:55555
+11-21 11:43:01.872 172.17.0.2:54321      1121   #r thread INFO: Log dir: '/home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/h2ologs/local-1511264464675'
+11-21 11:43:01.872 172.17.0.2:54321      1121   #r thread INFO: Cur dir: '/home/jovyan/work/sparkling-water-2.2.2/data/flight/prod'
+11-21 11:43:01.881 172.17.0.2:54321      1121   #r thread INFO: HDFS subsystem successfully initialized
+11-21 11:43:01.893 172.17.0.2:54321      1121   #r thread INFO: S3 subsystem successfully initialized
+11-21 11:43:01.893 172.17.0.2:54321      1121   #r thread INFO: Flow dir: '/home/jovyan/h2oflows'
+11-21 11:43:01.905 172.17.0.2:54321      1121   #r thread INFO: Cloud of size 1 formed [6cd9192f489c/172.17.0.2:54321]
+11-21 11:43:01.942 172.17.0.2:54321      1121   #r thread INFO: Registered parsers: [GUESS, ARFF, XLS, SVMLight, AVRO, ORC, PARQUET, CSV]
+11-21 11:43:01.944 172.17.0.2:54321      1121   #r thread INFO: Watchdog extension initialized
+11-21 11:43:01.946 172.17.0.2:54321      1121   #r thread INFO: XGBoost extension initialized
+11-21 11:43:01.946 172.17.0.2:54321      1121   #r thread INFO: Registered 2 core extensions in: 138ms
+11-21 11:43:01.946 172.17.0.2:54321      1121   #r thread INFO: Registered H2O core extensions: [Watchdog, XGBoost]
+11-21 11:43:02.769 172.17.0.2:54321      1121   #r thread INFO: Registered: 161 REST APIs in: 823ms
+11-21 11:43:02.770 172.17.0.2:54321      1121   #r thread INFO: Registered REST API extensions: [XGBoost, Algos, AutoML, Core V3, Core V4]
+11-21 11:43:03.069 172.17.0.2:54321      1121   #r thread INFO: Registered: 246 schemas in 299ms
+11-21 11:43:03.069 172.17.0.2:54321      1121   #r thread INFO: H2O started in 2005ms
+11-21 11:43:03.069 172.17.0.2:54321      1121   #r thread INFO: 
+11-21 11:43:03.070 172.17.0.2:54321      1121   #r thread INFO: Open H2O Flow in your web browser: http://172.17.0.2:54321
+11-21 11:43:03.070 172.17.0.2:54321      1121   #r thread INFO: 
+11-21 11:43:17.580 172.17.0.2:54321      1121   #54083-88 INFO: POST /4/sessions, parms: {}
+11-21 11:43:17.586 172.17.0.2:54321      1121   #54083-88 INFO: Locking cloud to new members, because water.api.schemas4.SessionIdV4
+11-21 11:43:17.623 172.17.0.2:54321      1121   #54083-89 INFO: POST /99/Rapids, parms: {ast=(setTimeZone "UTC"), session_id=_sid_81d6}
+11-21 11:43:17.931 172.17.0.2:54321      1121   #54083-90 INFO: GET /3/Capabilities/API, parms: {}
