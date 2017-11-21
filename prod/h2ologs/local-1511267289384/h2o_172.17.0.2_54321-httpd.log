@@ -1,0 +1,8 @@
+2017-11-21 12:28:23,205   GET     200      50 ms  /3/Cloud
+2017-11-21 12:28:23,220   POST    200      10 ms  /4/sessions
+2017-11-21 12:28:23,324   POST    200     101 ms  /99/Rapids
+2017-11-21 12:28:23,333   GET     200       6 ms  /3/Capabilities/API
+2017-11-21 12:34:32,047   GET     200       1 ms  /3/Cloud
+2017-11-21 12:34:32,051   POST    200       0 ms  /4/sessions
+2017-11-21 12:34:32,055   POST    200       1 ms  /99/Rapids
+2017-11-21 12:34:32,057   GET     200       0 ms  /3/Capabilities/API
