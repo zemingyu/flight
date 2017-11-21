@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Tue Nov 21 12:28:11 UTC 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015f-de8c-cf04-0000375eb8d0 
-on database directory /home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@45df7a12 
+Tue Nov 21 13:45:15 UTC 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015f-ded3-60b8-00003a04afe0 
+on database directory /home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@336b9615 
 Loaded from file:/usr/local/spark-2.2.0-bin-hadoop2.7/jars/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_151-8u151-b12-0ubuntu0.16.04.2-b12
 user.dir=/home/jovyan/work/sparkling-water-2.2.2/data/flight/prod
 os.name=Linux
 os.arch=amd64
-os.version=4.4.0-1038-aws
+os.version=4.4.0-1022-aws
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''

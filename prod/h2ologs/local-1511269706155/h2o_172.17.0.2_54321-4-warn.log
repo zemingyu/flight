@@ -1,0 +1,3 @@
+11-21 13:11:49.017 172.17.0.2:54321      253    #e Thread WARN: Unblock allocations; cache below desired, but also OOM: GC CALLBACK, (K/V:2.8 KB + POJO:8.04 GB + FREE:2.63 GB == MEM_MAX:10.67 GB), desiredKV=1.33 GB OOM!
+11-21 13:12:53.020 172.17.0.2:54321      253    #e Thread WARN: Unblock allocations; cache below desired, but also OOM: GC CALLBACK, (K/V:2.8 KB + POJO:9.39 GB + FREE:1.27 GB == MEM_MAX:10.67 GB), desiredKV=1.33 GB OOM!
+11-21 13:13:55.218 172.17.0.2:54321      253    #e Thread WARN: Unblock allocations; cache below desired, but also OOM: GC CALLBACK, (K/V:2.8 KB + POJO:9.39 GB + FREE:1.27 GB == MEM_MAX:10.67 GB), desiredKV=1.33 GB OOM!
