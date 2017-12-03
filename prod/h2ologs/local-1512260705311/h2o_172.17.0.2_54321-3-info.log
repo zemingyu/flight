@@ -1,0 +1,1001 @@
+12-03 00:48:49.222 172.17.0.2:54321      126    #r thread INFO: Found XGBoost backend with library: xgboost4j
+12-03 00:48:49.264 172.17.0.2:54321      126    #r thread INFO: Your system supports only minimal version of XGBoost (no GPUs, no multithreading)!
+12-03 00:48:49.265 172.17.0.2:54321      126    #r thread INFO: ----- H2O started  -----
+12-03 00:48:49.265 172.17.0.2:54321      126    #r thread INFO: Build git branch: rel-weierstrass
+12-03 00:48:49.265 172.17.0.2:54321      126    #r thread INFO: Build git hash: f1f65fe382ac4a0dc4631b9ee1468eb8eef7b27e
+12-03 00:48:49.265 172.17.0.2:54321      126    #r thread INFO: Build git describe: jenkins-3.14.0.6-6-gf1f65fe38
+12-03 00:48:49.265 172.17.0.2:54321      126    #r thread INFO: Build project version: 3.14.0.7 (latest version: 3.16.0.2)
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Build age: 1 month and 12 days
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Built by: 'jenkins'
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Built on: '2017-10-20 18:37:17'
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Watchdog Build git branch: (unknown)
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Watchdog Build git hash: (unknown)
+12-03 00:48:49.266 172.17.0.2:54321      126    #r thread INFO: Watchdog Build git describe: (unknown)
+12-03 00:48:49.267 172.17.0.2:54321      126    #r thread INFO: Watchdog Build project version: (unknown)
+12-03 00:48:49.267 172.17.0.2:54321      126    #r thread INFO: Watchdog Built by: (unknown)
+12-03 00:48:49.267 172.17.0.2:54321      126    #r thread INFO: Watchdog Built on: (unknown)
+12-03 00:48:49.267 172.17.0.2:54321      126    #r thread INFO: XGBoost Build git branch: (unknown)
+12-03 00:48:49.267 172.17.0.2:54321      126    #r thread INFO: XGBoost Build git hash: (unknown)
+12-03 00:48:49.268 172.17.0.2:54321      126    #r thread INFO: XGBoost Build git describe: (unknown)
+12-03 00:48:49.268 172.17.0.2:54321      126    #r thread INFO: XGBoost Build project version: (unknown)
+12-03 00:48:49.268 172.17.0.2:54321      126    #r thread INFO: XGBoost Built by: (unknown)
+12-03 00:48:49.268 172.17.0.2:54321      126    #r thread INFO: XGBoost Built on: (unknown)
+12-03 00:48:49.268 172.17.0.2:54321      126    #r thread INFO: Processed H2O arguments: [-name, sparkling-water-jovyan_local-1512260705311, -ga_opt_out, -log_level, INFO, -baseport, 54321, -ip, 172.17.0.2, -log_dir, /home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/h2ologs/local-1512260705311]
+12-03 00:48:49.269 172.17.0.2:54321      126    #r thread INFO: Java availableProcessors: 4
+12-03 00:48:49.269 172.17.0.2:54321      126    #r thread INFO: Java heap totalMemory: 281.0 MB
+12-03 00:48:49.269 172.17.0.2:54321      126    #r thread INFO: Java heap maxMemory: 2.67 GB
+12-03 00:48:49.269 172.17.0.2:54321      126    #r thread INFO: Java version: Java 1.8.0_151 (from Oracle Corporation)
+12-03 00:48:49.269 172.17.0.2:54321      126    #r thread INFO: JVM launch parameters: [-Xmx3g]
+12-03 00:48:49.270 172.17.0.2:54321      126    #r thread INFO: OS version: Linux 4.10.0-40-generic (amd64)
+12-03 00:48:49.270 172.17.0.2:54321      126    #r thread INFO: Machine physical memory: 7.60 GB
+12-03 00:48:49.270 172.17.0.2:54321      126    #r thread INFO: X-h2o-cluster-id: 1512262125501
+12-03 00:48:49.270 172.17.0.2:54321      126    #r thread INFO: User name: 'jovyan'
+12-03 00:48:49.270 172.17.0.2:54321      126    #r thread INFO: Opted out of sending usage metrics.
+12-03 00:48:49.271 172.17.0.2:54321      126    #r thread INFO: IPv6 stack selected: false
+12-03 00:48:49.271 172.17.0.2:54321      126    #r thread INFO: Possible IP Address: eth0 (eth0), 172.17.0.2
+12-03 00:48:49.271 172.17.0.2:54321      126    #r thread INFO: Possible IP Address: lo (lo), 127.0.0.1
+12-03 00:48:49.271 172.17.0.2:54321      126    #r thread INFO: H2O node running in unencrypted mode.
+12-03 00:48:49.276 172.17.0.2:54321      126    #r thread INFO: Internal communication uses port: 54322
+12-03 00:48:49.276 172.17.0.2:54321      126    #r thread INFO: Listening for HTTP and REST traffic on http://172.17.0.2:54321/
+12-03 00:48:49.340 172.17.0.2:54321      126    #r thread INFO: H2O cloud name: 'sparkling-water-jovyan_local-1512260705311' on /172.17.0.2:54321, discovery address /238.237.26.226:61165
+12-03 00:48:49.340 172.17.0.2:54321      126    #r thread INFO: If you have trouble connecting, try SSH tunneling from your local machine (e.g., via port 55555):
+12-03 00:48:49.340 172.17.0.2:54321      126    #r thread INFO:   1. Open a terminal and run 'ssh -L 55555:localhost:54321 jovyan@172.17.0.2'
+12-03 00:48:49.340 172.17.0.2:54321      126    #r thread INFO:   2. Point your browser to http://localhost:55555
+12-03 00:48:49.567 172.17.0.2:54321      126    #r thread INFO: Log dir: '/home/jovyan/work/sparkling-water-2.2.2/data/flight/prod/h2ologs/local-1512260705311'
+12-03 00:48:49.567 172.17.0.2:54321      126    #r thread INFO: Cur dir: '/home/jovyan/work/sparkling-water-2.2.2/data/flight/prod'
+12-03 00:48:49.609 172.17.0.2:54321      126    #r thread INFO: HDFS subsystem successfully initialized
+12-03 00:48:49.617 172.17.0.2:54321      126    #r thread INFO: S3 subsystem successfully initialized
+12-03 00:48:49.618 172.17.0.2:54321      126    #r thread INFO: Flow dir: '/home/jovyan/h2oflows'
+12-03 00:48:49.644 172.17.0.2:54321      126    #r thread INFO: Cloud of size 1 formed [da40e7b95409/172.17.0.2:54321]
+12-03 00:48:49.963 172.17.0.2:54321      126    #r thread INFO: Registered parsers: [GUESS, ARFF, XLS, SVMLight, AVRO, ORC, PARQUET, CSV]
+12-03 00:48:49.964 172.17.0.2:54321      126    #r thread INFO: Watchdog extension initialized
+12-03 00:48:49.964 172.17.0.2:54321      126    #r thread INFO: XGBoost extension initialized
+12-03 00:48:49.964 172.17.0.2:54321      126    #r thread INFO: Registered 2 core extensions in: 179ms
+12-03 00:48:49.964 172.17.0.2:54321      126    #r thread INFO: Registered H2O core extensions: [Watchdog, XGBoost]
+12-03 00:48:50.993 172.17.0.2:54321      126    #r thread INFO: Registered: 161 REST APIs in: 1028ms
+12-03 00:48:50.994 172.17.0.2:54321      126    #r thread INFO: Registered REST API extensions: [XGBoost, Algos, AutoML, Core V3, Core V4]
+12-03 00:48:51.304 172.17.0.2:54321      126    #r thread INFO: Registered: 246 schemas in 310ms
+12-03 00:48:51.305 172.17.0.2:54321      126    #r thread INFO: H2O started in 4318ms
+12-03 00:48:51.305 172.17.0.2:54321      126    #r thread INFO: 
+12-03 00:48:51.306 172.17.0.2:54321      126    #r thread INFO: Open H2O Flow in your web browser: http://172.17.0.2:54321
+12-03 00:48:51.306 172.17.0.2:54321      126    #r thread INFO: 
+12-03 00:49:04.757 172.17.0.2:54321      126    #2131-109 INFO: POST /4/sessions, parms: {}
+12-03 00:49:04.771 172.17.0.2:54321      126    #2131-109 INFO: Locking cloud to new members, because water.api.schemas4.SessionIdV4
+12-03 00:49:04.883 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(setTimeZone "UTC"), session_id=_sid_aa01}
+12-03 00:49:05.200 172.17.0.2:54321      126    #2131-111 INFO: GET /3/Capabilities/API, parms: {}
+12-03 04:36:08.844 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/frame_rdd_544_a716d81038159b36822b7ab57b9a4756, parms: {row_count=10}
+12-03 04:36:59.683 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(tmp= py_1_sid_aa01 (rows frame_rdd_544_a716d81038159b36822b7ab57b9a4756 [0:5])), session_id=_sid_aa01}
+12-03 04:36:59.853 172.17.0.2:54321      126    #2131-113 INFO: GET /3/Frames/py_1_sid_aa01, parms: {row_count=5}
+12-03 04:36:59.936 172.17.0.2:54321      126    #2131-112 INFO: POST /99/Rapids, parms: {ast=(rm py_1_sid_aa01), session_id=_sid_aa01}
+12-03 04:36:59.985 172.17.0.2:54321      126    #2131-108 INFO: GET /3/Frames/frame_rdd_544_a716d81038159b36822b7ab57b9a4756, parms: {row_count=10}
+12-03 04:37:00.189 172.17.0.2:54321      126    #2131-109 INFO: POST /99/Rapids, parms: {ast=(tmp= py_3_sid_aa01 (levels (tmp= py_2_sid_aa01 (cols_py frame_rdd_544_a716d81038159b36822b7ab57b9a4756 'leg1_carrierSummary_airlineName')))), session_id=_sid_aa01}
+12-03 04:37:00.235 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(rm py_3_sid_aa01), session_id=_sid_aa01}
+12-03 04:37:00.251 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(rm py_2_sid_aa01), session_id=_sid_aa01}
+12-03 04:37:00.309 172.17.0.2:54321      126    #2131-113 INFO: POST /99/Rapids, parms: {ast=(tmp= py_5_sid_aa01 (levels (tmp= py_4_sid_aa01 (cols_py frame_rdd_544_a716d81038159b36822b7ab57b9a4756 'depDayOfWeek')))), session_id=_sid_aa01}
+12-03 04:37:00.330 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(rm py_5_sid_aa01), session_id=_sid_aa01}
+12-03 04:37:00.340 172.17.0.2:54321      126    #2131-109 INFO: POST /99/Rapids, parms: {ast=(rm py_4_sid_aa01), session_id=_sid_aa01}
+12-03 04:37:32.465 172.17.0.2:54321      126    #2131-110 INFO: GET /3/Frames/frame_rdd_544_a716d81038159b36822b7ab57b9a4756, parms: {row_count=10}
+12-03 04:37:33.173 172.17.0.2:54321      126    #2131-111 INFO: GET /3/Frames/frame_rdd_544_a716d81038159b36822b7ab57b9a4756, parms: {row_count=10}
+12-03 04:37:35.665 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/frame_rdd_544_a716d81038159b36822b7ab57b9a4756, parms: {row_count=10}
+12-03 04:37:36.735 172.17.0.2:54321      126    #2131-113 INFO: POST /99/Rapids, parms: {ast=(tmp= py_6_sid_aa01 (:= frame_rdd_544_a716d81038159b36822b7ab57b9a4756 (as.factor (cols_py frame_rdd_544_a716d81038159b36822b7ab57b9a4756 'priceWillDrop')) 1 [])), session_id=_sid_aa01}
+12-03 04:37:36.803 172.17.0.2:54321      126    #2131-112 INFO: GET /3/Frames/py_6_sid_aa01, parms: {row_count=10}
+12-03 04:37:37.671 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(tmp= py_7_sid_aa01 (cols_py py_6_sid_aa01 'searchDate')), session_id=_sid_aa01}
+12-03 04:37:37.685 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/py_7_sid_aa01, parms: {row_count=10}
+12-03 04:37:39.010 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(tmp= py_8_sid_aa01 (rows py_6_sid_aa01 (<= (cols_py py_6_sid_aa01 'searchDate') (moment 2017 6 10 0 0 0 0)))), session_id=_sid_aa01}
+12-03 04:37:39.140 172.17.0.2:54321      126    #2131-111 INFO: GET /3/Frames/py_8_sid_aa01, parms: {row_count=10}
+12-03 04:40:20.210 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(tmp= py_9_sid_aa01 (:= py_6_sid_aa01 (as.Date (cols_py py_6_sid_aa01 'searchDate') 'YYYY-mm-dd') 6 [])), session_id=_sid_aa01}
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 04:40:20.233 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 04:40:20.244 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: Caught exception: 
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: ERROR MESSAGE:
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"'
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 04:40:20.246 172.17.0.2:54321      126    #2131-114 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49),     water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),     sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945),     org.joda.time.DateTime.parse(DateTime.java:160),     water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70),     water.MRTask.compute2(MRTask.java:644),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_9_sid_aa01 (:= py_6_sid_aa01 (as.Date (cols_py py_6_sid_aa01 'searchDate') 'YYYY-mm-dd') 6 [])), session_id=_sid_aa01}
+12-03 04:40:31.509 172.17.0.2:54321      126    #2131-113 INFO: GET /3/Frames/py_9_sid_aa01, parms: {row_count=10}
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_9_sid_aa01' not found for argument: key
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.FramesHandler.getFromDKV(FramesHandler.java:134)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.FramesHandler.doFetch(FramesHandler.java:212)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.FramesHandler.fetch(FramesHandler.java:198)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doGet(RequestServer.java:221)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+12-03 04:40:31.512 172.17.0.2:54321      126    #2131-113 ERRR: 	at java.lang.Thread.run(Thread.java:748)
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: Caught exception: 
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: 
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: ERROR MESSAGE:
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: 
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: Object 'py_9_sid_aa01' not found for argument: key
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: 
+12-03 04:40:31.519 172.17.0.2:54321      126    #2131-113 WARN: ; Stacktrace: [water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_9_sid_aa01' not found for argument: key,     water.api.FramesHandler.getFromDKV(FramesHandler.java:134),     water.api.FramesHandler.doFetch(FramesHandler.java:212),     water.api.FramesHandler.fetch(FramesHandler.java:198),     sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method),     sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doGet(RequestServer.java:221),     javax.servlet.http.HttpServlet.service(HttpServlet.java:687),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72),     ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543),     java.lang.Thread.run(Thread.java:748)]; Values: {"argument":"key", "name":"py_9_sid_aa01"}
+12-03 04:41:32.492 172.17.0.2:54321      126    #2131-112 INFO: GET /, parms: {}
+12-03 04:41:32.628 172.17.0.2:54321      126    #2131-112 INFO: GET /flow/index.html, parms: {}
+12-03 04:41:32.629 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/index.html via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.630 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/index.html via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.880 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/css/flow-lib.css via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.883 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/css/flow.css via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.885 172.17.0.2:54321      126    #2131-109 INFO: Trying to load resource /flow/css/scala-editor.css via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.886 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/css/flow.css via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.886 172.17.0.2:54321      126    #2131-109 INFO: Trying to load resource /flow/css/scala-editor.css via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.886 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/css/flow-lib.css via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.889 172.17.0.2:54321      126    #2131-110 INFO: Trying to load resource /flow/custom/custom.css via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.890 172.17.0.2:54321      126    #2131-110 INFO: Trying to load resource /flow/custom/custom.css via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.904 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/js/flow.js via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.904 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/js/flow-lib.js via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:32.905 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/js/flow.js via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:32.905 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/js/flow-lib.js via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:33.439 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/img/h2o.png via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:33.440 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/img/h2o.png via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:33.451 172.17.0.2:54321      126    #2131-112 INFO: GET /flow/fonts/fontawesome-webfont.woff, parms: {v=4.2.0}
+12-03 04:41:33.451 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/fonts/fontawesome-webfont.woff via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:33.452 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/fonts/fontawesome-webfont.woff via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:33.711 172.17.0.2:54321      126    #2131-112 INFO: GET /flow/index.html, parms: {}
+12-03 04:41:33.712 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/index.html via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:33.713 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /flow/index.html via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:33.734 172.17.0.2:54321      126    #2131-112 INFO: GET /3/Metadata/endpoints, parms: {}
+12-03 04:41:34.363 172.17.0.2:54321      126    #2131-112 INFO: GET /3/NodePersistentStorage/notebook, parms: {}
+12-03 04:41:34.384 172.17.0.2:54321      126    #2131-108 INFO: GET /flow/help/catalog.json, parms: {}
+12-03 04:41:34.385 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/help/catalog.json via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:34.385 172.17.0.2:54321      126    #2131-112 INFO: GET /3/NodePersistentStorage/categories/environment/names/clips/exists, parms: {}
+12-03 04:41:34.386 172.17.0.2:54321      126    #2131-108 INFO: Trying to load resource /flow/help/catalog.json via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:34.387 172.17.0.2:54321      126    #2131-109 INFO: GET /3/About, parms: {}
+12-03 04:41:34.400 172.17.0.2:54321      126    #2131-112 INFO: GET /3/ModelBuilders, parms: {}
+12-03 04:41:34.405 172.17.0.2:54321      126    #2131-108 INFO: POST /3/scalaint, parms: {}
+12-03 04:41:34.419 172.17.0.2:54321      126    #2131-109 INFO: Trying to load resource /flow/img/h2o-flow.png via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:34.421 172.17.0.2:54321      126    #2131-109 INFO: Trying to load resource /flow/img/h2o-flow.png via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:37.519 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /favicon.ico via classloader sun.misc.Launcher$AppClassLoader@3d71d552
+12-03 04:41:37.520 172.17.0.2:54321      126    #2131-112 INFO: Trying to load resource /favicon.ico via classloader org.apache.spark.util.MutableURLClassLoader@1ef8b518
+12-03 04:41:40.981 172.17.0.2:54321      126    #2131-112 INFO: GET /3/Frames, parms: {}
+12-03 04:42:00.679 172.17.0.2:54321      126    #2131-113 INFO: POST /4/sessions, parms: {}
+12-03 04:42:00.690 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(setTimeZone "UTC"), session_id=_sid_97ce}
+12-03 04:42:00.706 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Capabilities/API, parms: {}
+12-03 05:11:44.406 172.17.0.2:54321      126    #2131-113 INFO: GET /3/Frames/frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6, parms: {row_count=10}
+12-03 05:11:58.183 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(tmp= py_10_sid_97ce (rows frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 [0:5])), session_id=_sid_97ce}
+12-03 05:11:58.249 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/py_10_sid_97ce, parms: {row_count=5}
+12-03 05:11:58.301 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(rm py_10_sid_97ce), session_id=_sid_97ce}
+12-03 05:11:58.322 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6, parms: {row_count=10}
+12-03 05:11:58.489 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(tmp= py_12_sid_97ce (levels (tmp= py_11_sid_97ce (cols_py frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 'leg1_carrierSummary_airlineName')))), session_id=_sid_97ce}
+12-03 05:11:58.508 172.17.0.2:54321      126    #2131-113 INFO: POST /99/Rapids, parms: {ast=(rm py_12_sid_97ce), session_id=_sid_97ce}
+12-03 05:11:58.523 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(rm py_11_sid_97ce), session_id=_sid_97ce}
+12-03 05:11:58.583 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(tmp= py_14_sid_97ce (levels (tmp= py_13_sid_97ce (cols_py frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 'depDayOfWeek')))), session_id=_sid_97ce}
+12-03 05:11:58.601 172.17.0.2:54321      126    #2131-109 INFO: POST /99/Rapids, parms: {ast=(rm py_14_sid_97ce), session_id=_sid_97ce}
+12-03 05:11:58.613 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(rm py_13_sid_97ce), session_id=_sid_97ce}
+12-03 05:12:10.658 172.17.0.2:54321      126    #2131-112 INFO: POST /99/Rapids, parms: {ast=(tmp= py_15_sid_97ce (rows frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 [0:5])), session_id=_sid_97ce}
+12-03 05:12:10.704 172.17.0.2:54321      126    #2131-113 INFO: GET /3/Frames/py_15_sid_97ce, parms: {row_count=5}
+12-03 05:18:34.264 172.17.0.2:54321      126    #2131-111 INFO: GET /3/Frames/frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6, parms: {row_count=10}
+12-03 05:18:42.579 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6, parms: {row_count=10}
+12-03 05:18:46.900 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(tmp= py_16_sid_97ce (:= frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 (as.factor (cols_py frame_rdd_814_a84d7ea0e5af295b1abda8b1b3245d6 'priceWillDrop')) 1 [])), session_id=_sid_97ce}
+12-03 05:18:46.940 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/py_16_sid_97ce, parms: {row_count=10}
+12-03 05:19:11.258 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(tmp= py_18_sid_97ce (rows (tmp= py_17_sid_97ce (:= py_16_sid_97ce (as.Date (cols_py py_16_sid_97ce 'searchDate') 'YYYY-mm-dd') 6 [])) (<= (cols_py py_17_sid_97ce 'searchDate') (moment 2017 6 10 0 0 0 0)))), session_id=_sid_97ce}
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:39)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:19:11.262 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:39)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:19:11.265 172.17.0.2:54321      126    #2131-111 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: Caught exception: 
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: 
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: ERROR MESSAGE:
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: 
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"'
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: 
+12-03 05:19:11.266 172.17.0.2:54321      126    #2131-111 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:49),     water.rapids.ast.prims.assign.AstRectangleAssign.apply(AstRectangleAssign.java:30),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:39),     water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945),     org.joda.time.DateTime.parse(DateTime.java:160),     water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70),     water.MRTask.compute2(MRTask.java:644),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_18_sid_97ce (rows (tmp= py_17_sid_97ce (:= py_16_sid_97ce (as.Date (cols_py py_16_sid_97ce 'searchDate') 'YYYY-mm-dd') 6 [])) (<= (cols_py py_17_sid_97ce 'searchDate') (moment 2017 6 10 0 0 0 0)))), session_id=_sid_97ce}
+12-03 05:19:26.886 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/py_17_sid_97ce, parms: {row_count=10}
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_17_sid_97ce' not found for argument: key
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.FramesHandler.getFromDKV(FramesHandler.java:134)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.FramesHandler.doFetch(FramesHandler.java:212)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.FramesHandler.fetch(FramesHandler.java:198)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGet(RequestServer.java:221)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+12-03 05:19:26.888 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.Thread.run(Thread.java:748)
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: Caught exception: 
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: 
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: ERROR MESSAGE:
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: 
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: Object 'py_17_sid_97ce' not found for argument: key
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: 
+12-03 05:19:26.891 172.17.0.2:54321      126    #2131-114 WARN: ; Stacktrace: [water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_17_sid_97ce' not found for argument: key,     water.api.FramesHandler.getFromDKV(FramesHandler.java:134),     water.api.FramesHandler.doFetch(FramesHandler.java:212),     water.api.FramesHandler.fetch(FramesHandler.java:198),     sun.reflect.GeneratedMethodAccessor152.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doGet(RequestServer.java:221),     javax.servlet.http.HttpServlet.service(HttpServlet.java:687),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72),     ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543),     java.lang.Thread.run(Thread.java:748)]; Values: {"argument":"key", "name":"py_17_sid_97ce"}
+12-03 05:19:33.919 172.17.0.2:54321      126    #2131-110 INFO: GET /3/Frames/py_17_sid_97ce, parms: {row_count=10}
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_17_sid_97ce' not found for argument: key
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.FramesHandler.getFromDKV(FramesHandler.java:134)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.FramesHandler.doFetch(FramesHandler.java:212)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.FramesHandler.fetch(FramesHandler.java:198)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at sun.reflect.GeneratedMethodAccessor152.invoke(Unknown Source)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.api.RequestServer.doGet(RequestServer.java:221)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+12-03 05:19:33.921 172.17.0.2:54321      126    #2131-110 ERRR: 	at java.lang.Thread.run(Thread.java:748)
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: Caught exception: 
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: 
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: ERROR MESSAGE:
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: 
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: Object 'py_17_sid_97ce' not found for argument: key
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: 
+12-03 05:19:33.923 172.17.0.2:54321      126    #2131-110 WARN: ; Stacktrace: [water.exceptions.H2OKeyNotFoundArgumentException: Object 'py_17_sid_97ce' not found for argument: key,     water.api.FramesHandler.getFromDKV(FramesHandler.java:134),     water.api.FramesHandler.doFetch(FramesHandler.java:212),     water.api.FramesHandler.fetch(FramesHandler.java:198),     sun.reflect.GeneratedMethodAccessor152.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doGet(RequestServer.java:221),     javax.servlet.http.HttpServlet.service(HttpServlet.java:687),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     water.JettyHTTPD$LoginHandler.handle(JettyHTTPD.java:189),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116),     ai.h2o.org.eclipse.jetty.server.Server.handle(Server.java:370),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971),     ai.h2o.org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644),     ai.h2o.org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235),     ai.h2o.org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72),     ai.h2o.org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608),     ai.h2o.org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543),     java.lang.Thread.run(Thread.java:748)]; Values: {"argument":"key", "name":"py_17_sid_97ce"}
+12-03 05:20:36.505 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7, parms: {row_count=10}
+12-03 05:20:36.659 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(tmp= py_19_sid_97ce (rows frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 [0:5])), session_id=_sid_97ce}
+12-03 05:20:36.697 172.17.0.2:54321      126    #2131-113 INFO: GET /3/Frames/py_19_sid_97ce, parms: {row_count=5}
+12-03 05:20:36.791 172.17.0.2:54321      126    #2131-112 INFO: GET /3/Frames/frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7, parms: {row_count=10}
+12-03 05:20:36.933 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(tmp= py_21_sid_97ce (levels (tmp= py_20_sid_97ce (cols_py frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 'leg1_carrierSummary_airlineName')))), session_id=_sid_97ce}
+12-03 05:20:36.951 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(rm py_21_sid_97ce), session_id=_sid_97ce}
+12-03 05:20:36.962 172.17.0.2:54321      126    #2131-109 INFO: POST /99/Rapids, parms: {ast=(rm py_20_sid_97ce), session_id=_sid_97ce}
+12-03 05:20:37.010 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(tmp= py_23_sid_97ce (levels (tmp= py_22_sid_97ce (cols_py frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 'depDayOfWeek')))), session_id=_sid_97ce}
+12-03 05:20:37.029 172.17.0.2:54321      126    #2131-112 INFO: POST /99/Rapids, parms: {ast=(rm py_23_sid_97ce), session_id=_sid_97ce}
+12-03 05:20:37.038 172.17.0.2:54321      126    #2131-111 INFO: POST /99/Rapids, parms: {ast=(rm py_22_sid_97ce), session_id=_sid_97ce}
+12-03 05:20:37.064 172.17.0.2:54321      126    #2131-114 INFO: GET /3/Frames/frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7, parms: {row_count=10}
+12-03 05:20:37.204 172.17.0.2:54321      126    #2131-110 INFO: GET /3/Frames/frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7, parms: {row_count=10}
+12-03 05:20:37.505 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7, parms: {row_count=10}
+12-03 05:21:33.504 172.17.0.2:54321      126    #2131-108 INFO: POST /99/Rapids, parms: {ast=(tmp= py_25_sid_97ce (as.Date (cols_py (tmp= py_24_sid_97ce (:= frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 (as.factor (cols_py frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 'priceWillDrop')) 1 [])) 'searchDate') 'YYYY-mm-dd')), session_id=_sid_97ce}
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:21:33.533 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:21:33.541 172.17.0.2:54321      126    #2131-108 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: Caught exception: 
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: 
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: ERROR MESSAGE:
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: 
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"'
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: 
+12-03 05:21:33.545 172.17.0.2:54321      126    #2131-108 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945),     org.joda.time.DateTime.parse(DateTime.java:160),     water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70),     water.MRTask.compute2(MRTask.java:644),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_25_sid_97ce (as.Date (cols_py (tmp= py_24_sid_97ce (:= frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 (as.factor (cols_py frame_rdd_851_84892c9b05f46dcbae118a1b457e46f7 'priceWillDrop')) 1 [])) 'searchDate') 'YYYY-mm-dd')), session_id=_sid_97ce}
+12-03 05:22:45.806 172.17.0.2:54321      126    #2131-108 INFO: GET /3/Frames/py_24_sid_97ce, parms: {row_count=10}
+12-03 05:22:54.140 172.17.0.2:54321      126    #2131-113 INFO: POST /99/Rapids, parms: {ast=(tmp= py_26_sid_97ce (as.Date (cols_py py_24_sid_97ce 'searchDate') 'YYYY-mm-dd')), session_id=_sid_97ce}
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:22:54.158 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:22:54.161 172.17.0.2:54321      126    #2131-113 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: Caught exception: 
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: 
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: ERROR MESSAGE:
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: 
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"'
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: 
+12-03 05:22:54.166 172.17.0.2:54321      126    #2131-113 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945),     org.joda.time.DateTime.parse(DateTime.java:160),     water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70),     water.MRTask.compute2(MRTask.java:644),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_26_sid_97ce (as.Date (cols_py py_24_sid_97ce 'searchDate') 'YYYY-mm-dd')), session_id=_sid_97ce}
+12-03 05:23:09.084 172.17.0.2:54321      126    #2131-112 INFO: POST /99/Rapids, parms: {ast=(tmp= py_27_sid_97ce (cols_py py_24_sid_97ce 'searchDate')), session_id=_sid_97ce}
+12-03 05:23:09.096 172.17.0.2:54321      126    #2131-111 INFO: GET /3/Frames/py_27_sid_97ce, parms: {row_count=10}
+12-03 05:23:18.109 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(tmp= py_28_sid_97ce (as.Date (cols_py py_24_sid_97ce 'searchDate') 'yyyy-mm-dd')), session_id=_sid_97ce}
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:23:18.126 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: java.lang.IllegalArgumentException: Invalid format: "2017-05-23"
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at org.joda.time.DateTime.parse(DateTime.java:160)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:644)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:23:18.131 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: Caught exception: 
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: ERROR MESSAGE:
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"'
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:23:18.132 172.17.0.2:54321      126    #2131-114 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'Invalid format: "2017-05-23"', caused by java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:53),     water.rapids.ast.prims.time.AstAsDate.apply(AstAsDate.java:21),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:java.lang.IllegalArgumentException: Invalid format: "2017-05-23",     org.joda.time.format.DateTimeFormatter.parseDateTime(DateTimeFormatter.java:945),     org.joda.time.DateTime.parse(DateTime.java:160),     water.rapids.ast.prims.time.AstAsDate$1.map(AstAsDate.java:70),     water.MRTask.compute2(MRTask.java:644),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.time.AstAsDate$1$Icer.compute1(AstAsDate$1$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_28_sid_97ce (as.Date (cols_py py_24_sid_97ce 'searchDate') 'yyyy-mm-dd')), session_id=_sid_97ce}
+12-03 05:26:02.007 172.17.0.2:54321      126    #2131-112 INFO: GET /3/Frames/py_24_sid_97ce, parms: {row_count=10}
+12-03 05:36:37.365 172.17.0.2:54321      126    #2131-114 INFO: POST /99/Rapids, parms: {ast=(tmp= py_29_sid_97ce (rows py_24_sid_97ce (< (cols_py py_24_sid_97ce 'searchDate') '2017-06-30'))), session_id=_sid_97ce}
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'unimplemented: Binary operation '<' is not supported on String columns.', caused by water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.frame_op_scalar(AstBinOp.java:222)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.prim_apply(AstBinOp.java:95)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.apply(AstBinOp.java:40)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:104)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O.unimpl(H2O.java:996)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.str_op(AstBinOp.java:164)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp$3.map(AstBinOp.java:234)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:657)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp$3$Icer.compute1(AstBinOp$3$Icer.java)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:36:37.389 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'unimplemented: Binary operation '<' is not supported on String columns.', caused by water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:478)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.getResult(MRTask.java:486)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:390)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.doAll(MRTask.java:396)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.frame_op_scalar(AstBinOp.java:222)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.prim_apply(AstBinOp.java:95)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.apply(AstBinOp.java:40)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:104)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.AstExec.exec(AstExec.java:63)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Session.exec(Session.java:88)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.Rapids.exec(Rapids.java:93)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RapidsHandler.exec(RapidsHandler.java:38)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at java.lang.reflect.Method.invoke(Method.java:498)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.Handler.handle(Handler.java:63)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.serve(RequestServer.java:448)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doGeneric(RequestServer.java:297)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.api.RequestServer.doPost(RequestServer.java:223)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: Caused by: water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O.unimpl(H2O.java:996)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp.str_op(AstBinOp.java:164)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp$3.map(AstBinOp.java:234)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:657)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.MRTask.compute2(MRTask.java:591)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute1(H2O.java:1266)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.rapids.ast.prims.operators.AstBinOp$3$Icer.compute1(AstBinOp$3$Icer.java)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at water.H2O$H2OCountedCompleter.compute(H2O.java:1262)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.CountedCompleter.exec(CountedCompleter.java:468)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477)
+12-03 05:36:37.395 172.17.0.2:54321      126    #2131-114 ERRR: 	at jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: Caught exception: 
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: ERROR MESSAGE:
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: DistributedException from da40e7b95409/172.17.0.2:54321: 'unimplemented: Binary operation '<' is not supported on String columns.'
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: 
+12-03 05:36:37.397 172.17.0.2:54321      126    #2131-114 ERRR: ; Stacktrace: [DistributedException from da40e7b95409/172.17.0.2:54321: 'unimplemented: Binary operation '<' is not supported on String columns.', caused by water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.,     water.MRTask.getResult(MRTask.java:478),     water.MRTask.getResult(MRTask.java:486),     water.MRTask.doAll(MRTask.java:390),     water.MRTask.doAll(MRTask.java:396),     water.rapids.ast.prims.operators.AstBinOp.frame_op_scalar(AstBinOp.java:222),     water.rapids.ast.prims.operators.AstBinOp.prim_apply(AstBinOp.java:95),     water.rapids.ast.prims.operators.AstBinOp.apply(AstBinOp.java:40),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:104),     water.rapids.ast.prims.mungers.AstRowSlice.apply(AstRowSlice.java:20),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:48),     water.rapids.ast.prims.assign.AstTmpAssign.apply(AstTmpAssign.java:17),     water.rapids.ast.AstExec.exec(AstExec.java:63),     water.rapids.Session.exec(Session.java:88),     water.rapids.Rapids.exec(Rapids.java:93),     water.api.RapidsHandler.exec(RapidsHandler.java:38),     sun.reflect.GeneratedMethodAccessor150.invoke(Unknown Source),     sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43),     java.lang.reflect.Method.invoke(Method.java:498),     water.api.Handler.handle(Handler.java:63),     water.api.RequestServer.serve(RequestServer.java:448),     water.api.RequestServer.doGeneric(RequestServer.java:297),     water.api.RequestServer.doPost(RequestServer.java:223),     javax.servlet.http.HttpServlet.service(HttpServlet.java:707),     javax.servlet.http.HttpServlet.service(HttpServlet.java:790),     ai.h2o.org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:503),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086),     ai.h2o.org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:429),     ai.h2o.org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020),     ai.h2o.org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135),     ai.h2o.org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154),     ai.h2o.org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116), Caused by:water.exceptions.H2OIllegalArgumentException: unimplemented: Binary operation '<' is not supported on String columns.,     water.H2O.unimpl(H2O.java:996),     water.rapids.ast.prims.operators.AstBinOp.str_op(AstBinOp.java:164),     water.rapids.ast.prims.operators.AstBinOp$3.map(AstBinOp.java:234),     water.MRTask.compute2(MRTask.java:657),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.MRTask.compute2(MRTask.java:591),     water.H2O$H2OCountedCompleter.compute1(H2O.java:1266),     water.rapids.ast.prims.operators.AstBinOp$3$Icer.compute1(AstBinOp$3$Icer.java),     water.H2O$H2OCountedCompleter.compute(H2O.java:1262),     jsr166y.CountedCompleter.exec(CountedCompleter.java:468),     jsr166y.ForkJoinTask.doExec(ForkJoinTask.java:263),     jsr166y.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:974),     jsr166y.ForkJoinPool.runWorker(ForkJoinPool.java:1477),     jsr166y.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:104)];parms={ast=(tmp= py_29_sid_97ce (rows py_24_sid_97ce (< (cols_py py_24_sid_97ce 'searchDate') '2017-06-30'))), session_id=_sid_97ce}
+12-03 05:38:46.985 172.17.0.2:54321      126    #2131-110 INFO: POST /99/Rapids, parms: {ast=(tmp= py_30_sid_97ce (as.Date (cols_py py_24_sid_97ce 'searchDate') '%Y-%m-%d')), session_id=_sid_97ce}
+12-03 05:38:47.268 172.17.0.2:54321      126    #2131-109 INFO: GET /3/Frames/py_30_sid_97ce, parms: {row_count=10}
