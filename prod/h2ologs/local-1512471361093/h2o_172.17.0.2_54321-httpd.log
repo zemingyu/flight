@@ -1,0 +1,5 @@
+2017-12-05 10:59:05,481   GET     200      53 ms  /3/Cloud
+2017-12-05 10:59:05,498   POST    200      11 ms  /4/sessions
+2017-12-05 10:59:05,619   POST    200     116 ms  /99/Rapids
+2017-12-05 10:59:05,627   GET     200       5 ms  /3/Capabilities/API
+2017-12-05 11:00:54,410   GET     200    1656 ms  /3/Frames/frame_rdd_110_9e400ba684267d7d17edfa07c0b24ee0
